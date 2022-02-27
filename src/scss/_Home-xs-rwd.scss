@@ -1,0 +1,578 @@
+@mixin xs {
+  @media (max-width: $breakpoint-xs) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media (max-width: $breakpoint-sm) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (max-width: $breakpoint-md) {
+    @content;
+  }
+}
+
+@include xs {
+  // 導覽列--------------------------------------------------------
+  // .NAVbar {
+  //   height: 50px !important;
+  //   background-color: var(--color-blue) !important;
+  // }
+  // .navA {
+  //   position: relative;
+  //   top: 10px;
+  //   border-right: 1px solid var(--color-white);
+  //   a:hover {
+  //     color: var(--color-lightY) !important;
+  //   }
+  // }
+
+  // .logo1 {
+  //   position: relative;
+  //   top: 4px;
+  //   width: 65px !important;
+  // }
+
+  // .solgon {
+  //   display: none;
+  // }
+
+  // // 登入紐
+  // .login {
+  //   margin-top: 4px;
+  //   margin-left: -26px;
+  //   margin-right: -20px;
+  // }
+
+  // .login:hover {
+  //   color: var(--color-lightY) !important;
+  //   // border: 1px solid var(--color-lightY) !important;
+  // }
+
+  // .overflowY {
+  //   overflow-y: none !important;
+  // }
+
+  // .btn1 {
+  //   font-size: 20px;
+  //   font-weight: 500;
+  //   background-color: var(--color-blue) !important;
+  //   border: 1px solid var(--color-blue) !important;
+  //   margin-bottom: 20px;
+  // }
+
+  // .btn1:hover {
+  //   color: var(--color-lightY) !important;
+  //   background-color: var(--color-deepblue) !important;
+  //   border: 1px solid var(--color-deepblue) !important;
+  // }
+
+  // .btn2 {
+  //   font-size: 17px !important;
+  //   font-weight: 700;
+  //   color: var(--color-blue) !important;
+  //   border-left: 1px solid var(--color-blue);
+  //   border-right: 1px solid var(--color-blue);
+  //   margin-top: -40px;
+  // }
+
+  // .btn2:hover {
+  //   color: var(--color-red) !important;
+  // }
+
+  // .savebtn {
+  //   pointer-events: none;
+  // }
+
+  // .savebtn:hover {
+  //   text-decoration: underline;
+  // }
+
+  // .avatars {
+  //   height: 30px;
+  //   position: relative;
+  //   top: 2px;
+  //   cursor: pointer;
+  // }
+
+  // .homeAva {
+  //   display: none !important;
+  // }
+
+  // .down {
+  //   display: none !important;
+  // }
+
+  // .userList {
+  //   display: none;
+
+  //   .memBtn:hover .memIcon {
+  //     color: var(--color-lightY) !important;
+  //   }
+  //   .memBtn:hover a {
+  //     color: var(--color-lightY) !important;
+  //   }
+  //   .mg {
+  //     margin-left: 10px;
+  //     margin-right: 10px;
+  //   }
+  // }
+
+  // .ownerList {
+  //   display: none;
+
+  //   .memBtn:hover .memIcon {
+  //     color: var(--color-lightY) !important;
+  //   }
+  //   .memBtn:hover a {
+  //     color: var(--color-lightY) !important;
+  //   }
+  //   .mg {
+  //     margin-left: 10px;
+  //     margin-right: 10px;
+  //   }
+  // }
+
+  // // user sidebar 選單紐 --------------------
+  // .xsMenuBtn {
+  //   margin-top: 4px;
+  //   margin-left: -26px;
+  //   margin-right: -20px;
+  //   position: absolute;
+  //   top: 0px;
+  //   cursor: pointer;
+  // }
+
+  // .xsMenuBtn:hover {
+  //   color: var(--color-lightY) !important;
+  //   // border: 1px solid var(--color-lightY) !important;
+  // }
+
+  // input[type='checkbox'] {
+  //   display: none;
+  // }
+
+  // input[type='checkbox']:checked + #usersidebar {
+  //   right: 0;
+  //   opacity: 1;
+  // }
+
+  // #usersidebar {
+  //   height: 100vh;
+  //   width: 60%;
+  //   position: fixed;
+  //   background-color: var(--color-blue);
+  //   filter: drop-shadow(0px 5px 3px rgb(0, 0, 0));
+  //   flex-direction: column;
+  //   top: 0;
+  //   right: -100%;
+  //   opacity: 0;
+  //   transition: 0.5s;
+
+  //   .closeX:hover {
+  //     color: var(--color-lightY) !important;
+  //     transform: rotate(90deg);
+  //     cursor: pointer;
+  //   }
+
+  //   .sidebarAva {
+  //     // background: red;
+  //     margin-top: 10px;
+  //     display: flex;
+  //     justify-content: center;
+  //     align-items: center;
+  //     flex-direction: column;
+  //     .ctext1 {
+  //       font-size: 20px;
+  //     }
+  //     .memBtn {
+  //       margin-bottom: 15px;
+  //     }
+  //     .sideline {
+  //       width: 100%;
+  //       height: 1px;
+  //       background: var(--color-white) !important;
+  //       margin-top: 20px;
+  //       margin-bottom: 20px;
+  //     }
+  //   }
+  // }
+
+  // owner sidebar-------------------------
+  input[type='checkbox'] {
+    display: none;
+  }
+
+  input[type='checkbox']:checked + #ownersidebar {
+    right: 0;
+    opacity: 1;
+  }
+
+  #ownersidebar {
+    height: 100vh;
+    width: 60%;
+    position: fixed;
+    background-color: var(--color-blue);
+    filter: drop-shadow(0px 5px 3px rgb(0, 0, 0));
+    flex-direction: column;
+    top: 0;
+    right: -100%;
+    opacity: 0;
+    transition: 0.5s;
+
+    .closeX:hover {
+      color: var(--color-lightY) !important;
+      transform: rotate(90deg);
+      cursor: pointer;
+    }
+
+    .sidebarAva {
+      // background: red;
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      .ctext1 {
+        font-size: 20px;
+      }
+      .memBtn {
+        margin-bottom: 15px;
+      }
+      .sideline {
+        width: 100%;
+        height: 1px;
+        background: var(--color-white) !important;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  // admin sidebar-------------------------
+  input[type='checkbox'] {
+    display: none;
+  }
+
+  input[type='checkbox']:checked + #adminsidebar {
+    right: 0;
+    opacity: 1;
+  }
+
+  #adminsidebar {
+    height: 100vh;
+    width: 60%;
+    position: fixed;
+    background-color: var(--color-white);
+    filter: drop-shadow(0px 5px 3px rgb(0, 0, 0));
+    flex-direction: column;
+    top: 0;
+    right: -100%;
+    opacity: 0;
+    transition: 0.5s;
+
+    .adlisttext {
+      color: var(--color-blue);
+      font-weight: 700;
+    }
+
+    .adlisttext:hover {
+      color: var(--color-red);
+    }
+
+    .closeXO:hover {
+      color: var(--color-red) !important;
+      transform: rotate(90deg);
+      cursor: pointer;
+    }
+
+    .sidebarAva {
+      // background: red;
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      .ctext1 {
+        font-size: 20px;
+      }
+      .memBtnR {
+        margin-bottom: 15px;
+      }
+      .sidelineA {
+        width: 100%;
+        height: 1px;
+        background: var(--color-blue) !important;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .memBtn:hover .memIcon {
+    color: var(--color-lightY) !important;
+  }
+  .memBtn:hover a {
+    color: var(--color-lightY) !important;
+  }
+
+  .memBtnR {
+    color: var(--color-blue) !important;
+  }
+
+  .memBtnR:hover .memIconR {
+    color: var(--color-red) !important;
+  }
+  .memBtnR:hover a {
+    color: var(--color-red) !important;
+  }
+
+  // HOME輪播圖----------------------------------------------------
+  .swcontent {
+    width: 150%;
+    height: 450px !important;
+    background: var(--color-blue) !important;
+    position: relative;
+  }
+
+  .sideItem {
+    width: 170%;
+    position: absolute;
+    top: 50px;
+    left: -30px;
+  }
+  .dark {
+    width: 100%;
+    height: 450px;
+    position: absolute;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+  }
+
+  .swiper {
+    width: 100%;
+    position: relative;
+    .centerLogo {
+      position: absolute;
+      top: 10px;
+      margin-top: 80px;
+      width: 150px !important;
+      z-index: 3;
+      filter: drop-shadow(3px 3px 5px rgb(0, 0, 0));
+    }
+
+    .centerslogan {
+      position: absolute;
+      top: 180px;
+      font-size: 2rem;
+      font-weight: 700;
+      // margin-left: 50px;
+      // margin-right: 60px;
+      line-height: 35px;
+      z-index: 3;
+      filter: drop-shadow(3px 3px 5px rgb(0, 0, 0));
+    }
+
+    .centerslogan3 {
+      position: relative;
+      margin-top: 40px;
+      margin-bottom: 0px;
+      font-size: 1.2rem;
+      font-weight: 700;
+      z-index: 3;
+      filter: drop-shadow(3px 3px 5px rgb(0, 0, 0));
+    }
+
+    .centerslogan3::after {
+      content: '';
+      position: absolute;
+      top: 15px;
+      left: -110px;
+      width: 100px;
+      height: 1px;
+      background-color: var(--color-white);
+    }
+
+    .centerslogan3::before {
+      content: '';
+      position: absolute;
+      top: 15px;
+      right: -110px;
+      width: 100px;
+      height: 1px;
+      background-color: var(--color-white);
+    }
+
+    .center {
+      display: flex;
+      height: 320px;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      z-index: 3;
+      background-color: var(--color-deepblue);
+    }
+
+    .goBtnDiv {
+      // background: red;
+      position: relative;
+      margin-top: 30px;
+      z-index: 3;
+
+      .goBtnl {
+        width: 150px !important;
+        height: 150px !important;
+        border-radius: 10px 0px 0px 10px;
+        background: rgba(0, 0, 0, 0) !important;
+        border: 1px dashed var(--color-white);
+        color: var(--color-white);
+        font-size: 1.5rem;
+        filter: drop-shadow(3px 3px 5px rgb(0, 0, 0));
+      }
+
+      .goBtnr {
+        width: 150px !important;
+        height: 150px !important;
+        border-radius: 0px 10px 10px 0px;
+        background: rgba(0, 0, 0, 0) !important;
+        border: 1px dashed var(--color-white);
+        color: var(--color-white);
+        font-size: 1.5rem;
+        filter: drop-shadow(3px 3px 5px rgb(0, 0, 0));
+      }
+      .v-btn__content {
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      .goBtnl:hover {
+        border-radius: 10px 10px 10px 10px;
+        border: 1px solid var(--color-lightY);
+        color: var(--color-lightY);
+        transform: scale(1.1);
+      }
+
+      .goBtnr:hover {
+        border-radius: 10px 10px 10px 10px;
+        border: 1px solid var(--color-chatblue);
+        color: var(--color-chatblue);
+        transform: scale(1.1);
+      }
+
+      .goBtnl:hover .gotextY {
+        color: var(--color-lightY);
+      }
+
+      .goBtnr:hover .gotextB {
+        color: var(--color-chatblue);
+      }
+
+      span {
+        font-size: 1.2rem !important;
+      }
+
+      p {
+        font-size: 0.8rem !important;
+      }
+    }
+
+    .goodcard {
+      position: relative;
+      top: -10px;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 3;
+      padding-bottom: 110px;
+      // background: var(--color-white);
+    }
+
+    .gCard {
+      width: 76%;
+      min-height: 250px;
+      background: var(--color-deepblue);
+      position: relative;
+      top: 110px;
+      filter: drop-shadow(0px 0px 3px var(--color-white));
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-left: 5%;
+      margin-right: 5%;
+      margin-top: 10px;
+      margin-bottom: 90px;
+      z-index: 3;
+    }
+
+    .gCard:hover {
+      transform: translateY(-25px);
+      box-shadow: 0 5px 10px 1px var(--color-white);
+      z-index: 3;
+    }
+
+    .circle {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: var(--color-white);
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .homeIcon-1 {
+      color: var(--color-blue) !important;
+      font-size: 55px !important;
+    }
+
+    .homeIcon-2 {
+      color: var(--color-blue) !important;
+      font-size: 50px !important;
+    }
+
+    .homeIcon-3 {
+      color: var(--color-blue) !important;
+      font-size: 40px !important;
+    }
+    .gText {
+      margin-top: 55px;
+      margin-bottom: 10px;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: var(--color-lightY);
+    }
+    p {
+      font-size: 16px;
+      line-height: 2rem;
+      color: var(--color-white);
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+  }
+
+  #section2 {
+    height: 100vh;
+    background-color: var(--color-deepblue);
+    .header {
+      height: 80px;
+      border-bottom: 1px solid white;
+    }
+    .solgon2 {
+      // border: 1px solid var(--color-white);
+      width: 140px;
+      height: 36px;
+      position: relative;
+    }
+  }
+}

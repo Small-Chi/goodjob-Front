@@ -1,0 +1,81 @@
+:root {
+  --color-blue: #282f42;
+  --color-deepblue: #1f2431;
+  --color-lightblue: #374058;
+  --color-chatblue: #91a7e2;
+  --color-white: #cdc6bc;
+  --color-deepwhite: #b1aea9;
+  --color-lightY: #ffbd5e;
+  --color-deepY: #f08d00;
+  --color-red: #ff4757;
+  --color-ddeepY: #f87800;
+  --color-chatdeepblue: #2f4b99;
+  --color-purple: #8147df;
+}
+
+// 1920
+$breakpoint-xs: 600px;
+$breakpoint-sm: 960px;
+$breakpoint-md: 1264px;
+$breakpoint-lg: 1920px;
+
+* {
+  transition: 0.5s;
+}
+
+body {
+  .ctext1 {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .ctext2 {
+    font-size: 22px;
+    font-weight: 500;
+  }
+
+  .fw-700 {
+    font-weight: 700;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.v-application ul {
+  padding-left: 0;
+}
+
+.textWhite {
+  color: var(--color-white) !important;
+}
+
+.textBlue {
+  color: var(--color-blue) !important;
+}
+
+.textlightY {
+  color: var(--color-lightY) !important;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--color-deepblue);
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #2f3649;
+  border-radius: 30px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-lightblue);
+}
