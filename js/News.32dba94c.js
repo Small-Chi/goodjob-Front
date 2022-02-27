@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["News"],{a2f9:function(n,e,l){"use strict";l.r(e);var s,u,w=l("2877"),a={},o=Object(w["a"])(a,s,u,!1,null,null,null);e["default"]=o.exports}}]);
+//# sourceMappingURL=News.32dba94c.js.map
