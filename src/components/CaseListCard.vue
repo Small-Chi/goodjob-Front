@@ -1,15 +1,15 @@
 <template>
-  <div class="Clistswiper">
+  <div id="Clistswiper">
     <swiper ref="mySwiper" :options="swiperOptions" style="width: 88%; padding-bottom: 20px">
       <swiper-slide v-for="(casedata, index) in casedata.cases" :key="index">
         <!-- 卡片呈現 -->
-        <v-card class="card mx-auto card-casedata" max-width="350" min-width="350" color="var(--color-lightblue)">
+        <v-card class="card mx-auto card-casedata" color="var(--color-lightblue)">
           <v-btn class="cardBtn" min-width="50" min-height="20" style="padding: 0" color="var(--color-red)">
             <v-icon size="18" color="white" class="justify-content-center; Btn1Icon">mdi-heart</v-icon>
             <div class="heartNum">{{ casedata.favorite }}</div>
           </v-btn>
           <div class="col-10">
-            <v-card-title class="ctext1 mb-1" style="margin-left: 10px; padding-top: 5px">
+            <v-card-title class="ctext1 mb-n5 mb-lg-1" style="margin-left: 10px; padding-top: 5px">
               <h3 class="textWhite ms-n1">{{ `◔` }}</h3>
               <h3 class="textlightY ms-2">{{ new Date(casedata.endingday).toLocaleDateString().replace(/\//g, '-') }}</h3>
             </v-card-title>
@@ -25,7 +25,7 @@
           <v-card-actions style="background: white" class="flex-wrap">
             <v-card-text>
               <router-link :to="`/owner/${casedata.owner}/casePage/` + casedata._id">
-                <div style="height: 215px">
+                <div class="Ccardcontrnt">
                   <h2 style="color: var(--color-deepblue)" class="card-title mt-n2 mb-2">{{ casedata.casename }}</h2>
                   <p style="font-size: 16px; color: var(--color-deepblue)">{{ casedata.description }}</p>
                 </div>
@@ -55,12 +55,17 @@
       </swiper-slide>
 
       <!-- <div class="swiper-pagination" slot="pagination" style="margin-top: 50px"></div> -->
-      <div class="swiper-button-next" slot="button-next"></div>
-      <div class="swiper-button-prev" slot="button-prev"></div>
+      <div class="swiper-button-next d-none d-lg-flex" slot="button-next"></div>
+      <div class="swiper-button-prev d-none d-lg-flex" slot="button-prev"></div>
     </swiper>
     <div class="ms-1 me-2 catdBottom">
       <router-link :to="`/owner/${casedata._id}/ownerself/`">
-        <v-avatar size="90" class="me-5 caseava">
+        <v-avatar size="90" class="me-5 caseava d-none d-lg-flex">
+          <v-img :src="'https://source.boringavatars.com/beam/120/' + casedata.account"></v-img>
+        </v-avatar>
+      </router-link>
+      <router-link :to="`/owner/${casedata._id}/ownerself/`">
+        <v-avatar size="60" class="me-3 caseava d-flex d-lg-none">
           <v-img :src="'https://source.boringavatars.com/beam/120/' + casedata.account"></v-img>
         </v-avatar>
       </router-link>

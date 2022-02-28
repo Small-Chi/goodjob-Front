@@ -4,7 +4,7 @@
       <div class="col d-flex">
         <span class="ownername">{{ ownerinfo.ownername }}</span>
         <v-btn icon class="messageIcon" plain>
-          <v-icon size="40">mdi-message-outline</v-icon>
+          <v-icon class="mesicon">mdi-message-outline</v-icon>
         </v-btn>
         <div class="score">
           <div class="scoreitems mt-n7">
@@ -44,10 +44,10 @@
           <v-dialog v-model="dialog" fullscreen hide-overlay transition="dialog-bottom-transition">
             <v-card>
               <v-toolbar color="var(--color-blue)" style="color: var(--color-white)">
-                <v-btn icon color="var(--color-white)" @click="dialog = false">
+                <v-btn icon color="var(--color-white)" @click="dialog = false" class="mt-n3">
                   <v-icon>mdi-close</v-icon>
                 </v-btn>
-                <v-toolbar-title>加入 goodjob !</v-toolbar-title>
+                <v-toolbar-title class="mt-n3">加入 goodjob !</v-toolbar-title>
                 <v-spacer></v-spacer>
                 <v-toolbar-items>
                   <v-btn class="savebtn" color="var(--color-white)" :ripple="false">Join Us</v-btn>
@@ -126,7 +126,7 @@
                               <v-expansion-panel-header>
                                 <template v-slot:default="{ open }">
                                   <v-row no-gutters>
-                                    <v-col cols="3">產品預算單</v-col>
+                                    <v-col class="col-lg-3">產品預算單</v-col>
                                     <v-col cols="8">
                                       <v-fade-transition leave-absolute>
                                         <span v-if="open" key="0"></span>
@@ -173,46 +173,46 @@
 
       <!-- 顯示呈現不要動! -->
       <div class="main">
-        <div class="row my-5">
-          <div class="col-2"><span class="main-title" style="font-weight: bold">- 行業類別</span></div>
-          <div class="col-10">
+        <div class="row my-lg-5">
+          <div class="col-4 col-md-3 col-xl-2"><span class="main-title" style="font-weight: bold">- 行業類別</span></div>
+          <div class="col-8 col-md-9 col-xl-10">
             <span class="fw-300">{{ ownerinfo.position }}</span>
           </div>
         </div>
-        <div class="row my-5">
-          <div class="col-2"><span class="main-title" style="font-weight: bold">- 發案狀況</span></div>
-          <div class="col-10">
+        <div class="row mb-5 my-lg-5">
+          <div class="col-4 col-md-3 col-xl-2"><span class="main-title" style="font-weight: bold">- 發案狀況</span></div>
+          <div class="col-8 col-md-9 col-xl-10">
             <span class="fw-300">{{ ownerinfo.state }}</span>
           </div>
         </div>
-        <div class="row my-5 py-5" style="border-top: 1px solid rgba(205, 198, 188, 0.3); border-bottom: 1px solid rgba(205, 198, 188, 0.3)">
-          <div class="col-2"><span class="main-title" style="font-weight: bold">- 需求工具</span></div>
-          <div class="col-10">
+        <div class="row my-lg-5 py-5" style="border-top: 1px solid rgba(205, 198, 188, 0.3); border-bottom: 1px solid rgba(205, 198, 188, 0.3)">
+          <div class="col-4 col-md-3 col-xl-2"><span class="main-title" style="font-weight: bold">- 需求工具</span></div>
+          <div class="col-8 col-md-9 col-xl-10">
             <span class="row">
-              <span class="col-3 fw-300" v-for="(item, index) in ownerinfo.technology" :key="'A' + index">{{ item }}</span>
+              <span class="col-6 col-lg-3 fw-300" v-for="(item, index) in ownerinfo.technology" :key="'A' + index">{{ item }}</span>
             </span>
           </div>
         </div>
-        <div class="row my-5">
-          <div class="col-2"><span class="main-title" style="font-weight: bold">- 工作時段</span></div>
-          <div class="col-10">
+        <div class="row my-lg-5 py-5">
+          <div class="col-4 col-md-3 col-xl-2"><span class="main-title" style="font-weight: bold">- 工作時段</span></div>
+          <div class="col-8 col-md-9 col-xl-10">
             <span class="fw-300">{{ ownerinfo.workingday }}</span>
           </div>
         </div>
-        <div class="row my-5">
-          <div class="col-2"><span class="main-title" style="font-weight: bold">- 案件預算</span></div>
-          <div class="col-10">
+        <div class="row my-lg-5">
+          <div class="col-4 col-md-3 col-xl-2"><span class="main-title" style="font-weight: bold">- 案件預算</span></div>
+          <div class="col-8 col-md-9 col-xl-10">
             <div class="row my-2">
-              <div class="pricesdiv col-3 mb-5" v-for="(price, index) in ownerinfo.prices" :key="'A' + index">
+              <div class="pricesdiv col-10 col-lg-3 mb-5" v-for="(price, index) in ownerinfo.prices" :key="'A' + index">
                 <span class="fw-300">{{ price.item }}</span>
                 <span class="fw-300">{{ price.price }}</span>
               </div>
             </div>
           </div>
         </div>
-        <div class="row my-5">
-          <div class="col-2"><span class="main-title" style="font-weight: bold">- 公司介紹</span></div>
-          <div class="col-10">
+        <div class="row my-lg-5">
+          <div class="col-4 col-md-3 col-xl-2"><span class="main-title" style="font-weight: bold">- 公司介紹</span></div>
+          <div class="col-8 col-md-9 col-xl-10">
             <span class="fw-300">{{ ownerinfo.about }}</span>
           </div>
         </div>

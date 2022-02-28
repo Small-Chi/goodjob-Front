@@ -12,7 +12,7 @@
           <v-text-field @keydown.enter="filterItemsS()"></v-text-field>
         </div>
       </div>
-      <div class="col-4" v-if="me">
+      <div class="col-lg-4" v-if="me">
         <div class="cardLine">
           <!-- 新增卡片按鈕 -->
           <v-btn depressed icon class="addcard" height="100" width="100">
@@ -21,10 +21,10 @@
         </div>
       </div>
       <!-- 要長出卡片的迴圈 -->
-      <div class="col-4" v-for="(item, index) in filterItems" :key="index">
+      <div class="col-lg-4" v-for="(item, index) in filterItems" :key="index">
         <div>
           <!-- 卡片呈現 -->
-          <v-card class="card mx-auto card-item" max-width="350" min-width="350" color="var(--color-lightblue)">
+          <v-card class="card mx-auto card-item" max-width="350" color="var(--color-lightblue)">
             <v-btn class="cardBtn" min-width="50" min-height="20" style="padding: 0" color="var(--color-red)">
               <v-icon size="18" color="white" class="justify-content-center; Btn1Icon">mdi-heart</v-icon>
               <div class="heartNum">0</div>
@@ -61,7 +61,7 @@
             <v-card-actions style="background: white" class="flex-wrap">
               <v-card-text class="col-12 mt-n1">
                 <router-link :to="`/owner/${$route.params.id}/casePage/` + item._id">
-                  <div class="text" style="height: 190px; background: white">
+                  <div class="text Ccardcontrnt">
                     <h2 style="color: var(--color-deepblue)" class="card-title mb-1">{{ item.casename }}</h2>
                     <p style="color: var(--color-deepblue)">{{ item.description }}</p>
                   </div>
@@ -222,15 +222,16 @@
                     ></v-textarea>
                   </div>
                 </v-col>
-                <v-col cols="12 d-flex justify-center">
+                <v-col cols="12 d-flex justify-center align-center flex-column">
                   <img-inputer
                     accept="image/*"
                     v-model="form.image"
                     size="large"
                     bottomText="點擊或拖曳檔案至此"
                     hoverText="點擊或拖曳檔案至此"
-                    placeholder="參考風格圖片"
+                    placeholder="點擊或拖曳檔案至此"
                   ></img-inputer>
+                  <p style="color: var(--color-red); margin-top: 10px">檔案大小請勿超過 1MB</p>
                 </v-col>
               </v-row>
               <v-radio-group row>

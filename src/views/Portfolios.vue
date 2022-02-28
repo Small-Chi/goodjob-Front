@@ -13,7 +13,7 @@
           <v-text-field @keydown.enter="filterItemsS()"></v-text-field>
         </div>
       </div>
-      <div class="col-4" v-if="me">
+      <div class="col-lg-4" v-if="me">
         <div class="cardLine">
           <!-- 新增卡片按鈕 -->
           <v-btn depressed icon class="addcard" height="100" width="100">
@@ -22,7 +22,7 @@
         </div>
       </div>
       <!-- 要長出卡片的迴圈 -->
-      <div class="col-4" v-for="(item, index) in filterItems" :key="index">
+      <div class="col-lg-4" v-for="(item, index) in filterItems" :key="index">
         <div>
           <!-- 卡片呈現 -->
           <v-card class="card mx-auto card-item" max-width="350" color="var(--color-lightblue)">
@@ -159,7 +159,7 @@
                 <v-col cols="12" sm="6">
                   <v-text-field label="估計價格" prefix="$" v-model="form.price"></v-text-field>
                 </v-col>
-                <v-col cols="12 d-flex justify-center">
+                <v-col cols="12 d-flex justify-center align-center flex-column">
                   <img-inputer
                     accept="image/*"
                     v-model="form.image"
@@ -168,6 +168,7 @@
                     hoverText="點擊或拖曳檔案至此"
                     placeholder="點擊或拖曳檔案至此"
                   ></img-inputer>
+                  <p style="color: var(--color-red); margin-top: 10px">檔案大小請勿超過 1MB</p>
                 </v-col>
               </v-row>
               <v-col cols="12">

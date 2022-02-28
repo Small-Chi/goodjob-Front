@@ -1,6 +1,6 @@
 <template>
   <div class="ms-6">
-    <v-btn color="rgba(0,0,0,0)" @click="dialog = true" class="textWhite login ms-xl-n6" plain v-if="!user.isuserLogin && !owner.isownerLogin">
+    <v-btn color="rgba(0,0,0,0)" @click="dialog = true" class="textWhite login ms-md-n6 ms-xl-n6" plain v-if="!user.isuserLogin && !owner.isownerLogin">
       <v-icon>mdi-login-variant</v-icon>
       <!-- 登入 -->
     </v-btn>
@@ -83,10 +83,10 @@
               </template>
               <v-card>
                 <v-toolbar color="var(--color-blue)" style="color: var(--color-white)">
-                  <v-btn icon color="var(--color-white)" @click="dialog4 = false">
+                  <v-btn icon color="var(--color-white)" @click="dialog4 = false" class="mt-n3">
                     <v-icon>mdi-close</v-icon>
                   </v-btn>
-                  <v-toolbar-title>加入 goodjob !</v-toolbar-title>
+                  <v-toolbar-title class="mt-n3">加入 goodjob !</v-toolbar-title>
                   <v-spacer></v-spacer>
                   <v-toolbar-items>
                     <v-btn class="savebtn" color="var(--color-white)" :ripple="false">Join Us</v-btn>
@@ -184,7 +184,7 @@
                                 <v-expansion-panel-header>
                                   <template v-slot:default="{ open }">
                                     <v-row no-gutters>
-                                      <v-col cols="3">產品報價單</v-col>
+                                      <v-col class="col-lg-3">產品報價單</v-col>
                                       <v-col cols="8">
                                         <v-fade-transition leave-absolute>
                                           <span v-if="open" key="0"></span>

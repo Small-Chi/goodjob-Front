@@ -1,10 +1,10 @@
 <template>
   <!-- 找專業的頁面 -->
-  <div id="favorite">
+  <div id="favoriteO">
     <div class="content">
       <template>
         <div style="width: 100%">
-          <v-select :items="slots" label="搜尋類別" class="mb-5"></v-select>
+          <v-select :items="slots" label="搜尋類別" class="mb-5 mt-6 mt-lg-0"></v-select>
           <v-simple-table>
             <template>
               <thead>
@@ -49,7 +49,7 @@
                   </td> -->
                   <td class="text-center">
                     <router-link :to="`/owner/${owner._id}/ownerchats/`">
-                      <v-icon color="var(--color-white)" class="me-2 favIcon">mdi-message-outline</v-icon>
+                      <v-icon color="var(--color-white)" class="me-lg-2 favIcon">mdi-message-outline</v-icon>
                     </router-link>
                     <v-icon color="var(--color-white)" class="favIconD" @click="deletefav(index)">mdi-delete</v-icon>
                   </td>

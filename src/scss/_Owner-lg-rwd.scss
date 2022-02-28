@@ -1,9 +1,3 @@
-// @mixin xs {
-//   @media (min-width: $breakpoint-xs) {
-//     @content;
-//   }
-// }
-
 @mixin sm {
   @media (max-width: $breakpoint-sm) {
     @content;
@@ -23,7 +17,7 @@
 }
 
 @include lg {
-  #userPage {
+  #ownerPage {
     .NAVbar {
       background-color: var(--color-blue) !important;
     }
@@ -138,8 +132,8 @@
     }
   }
 
-  // Userself-------------------------
-  #userself {
+  // Ownerself-------------------------
+  #ownerself {
     background-color: var(--color-deepblue);
     // border: 1px solid rgba(255, 255, 255, 0.2);
     width: 76.5%;
@@ -152,7 +146,7 @@
     display: flex;
     justify-content: start;
     color: var(--color-white);
-    .username {
+    .ownername {
       height: 100px;
       font-size: 45px;
       font-weight: 600;
@@ -162,7 +156,7 @@
       margin-top: 15px;
       color: var(--color-lightY);
     }
-    .username::after {
+    .ownername::after {
       content: '';
       width: 100%;
       height: 65px;
@@ -260,7 +254,7 @@
 }
 
 @include md {
-  #userPage {
+  #ownerPage {
     .NAVbar {
       background-color: var(--color-blue) !important;
     }
@@ -376,8 +370,8 @@
     }
   }
 
-  // Userself-------------------------
-  #userself {
+  // Ownerself-------------------------
+  #ownerself {
     background-color: var(--color-deepblue);
     // border: 1px solid rgba(255, 255, 255, 0.2);
     width: 100%;
@@ -390,7 +384,7 @@
     display: flex;
     justify-content: start;
     color: var(--color-white);
-    .username {
+    .ownername {
       height: 100px;
       font-size: 40px;
       font-weight: 600;
@@ -400,7 +394,7 @@
       margin-top: 33px;
       color: var(--color-lightY);
     }
-    .username::after {
+    .ownername::after {
       content: '';
       width: 100%;
       height: 65px;
@@ -433,7 +427,7 @@
 
     .score {
       // border: 1px solid white;
-      // width: 900px;
+      // width: 80%;
       display: flex;
       flex-wrap: wrap;
       padding-left: 50px;
@@ -499,8 +493,26 @@
   }
 }
 
+@mixin sm {
+  @media (max-width: $breakpoint-sm) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (max-width: $breakpoint-md) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: $breakpoint-lg) {
+    @content;
+  }
+}
+
 @include xs {
-  #userPage {
+  #ownerPage {
     .Usersolgon {
       border: 1px solid var(--color-white);
       width: 85px;
@@ -551,7 +563,7 @@
       display: none;
     }
 
-    input[type='checkbox']:checked + #UserPageSIderbar {
+    input[type='checkbox']:checked + #OwnerPageSIderbar {
       top: 0;
       opacity: 1;
     }
@@ -570,6 +582,7 @@
     .selfmeanu {
       width: 250px;
       // height: 150px;
+      // border: 1px solid red;
       position: absolute;
       top: 70px;
       left: 110px;
@@ -625,7 +638,6 @@
         margin-right: 0px;
         margin-top: 41px;
         margin-left: 10px;
-        // background-color: red;
         width: 80px;
       }
 
@@ -674,8 +686,8 @@
     }
   }
 
-  // Userself---------------------------------
-  #userself {
+  // Ownerself-------------------------
+  #ownerself {
     background-color: var(--color-deepblue);
     // border: 1px solid rgba(255, 255, 255, 0.2);
     width: 100%;
@@ -688,7 +700,7 @@
     justify-content: start;
     color: var(--color-white);
     position: relative;
-    .username {
+    .ownername {
       height: 100px;
       font-size: 25px;
       font-weight: 600;
@@ -698,7 +710,7 @@
       margin-top: 15px;
       color: var(--color-lightY);
     }
-    .username::after {
+    .ownername::after {
       content: '';
       width: 100%;
       height: 40px;

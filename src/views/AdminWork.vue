@@ -3,7 +3,7 @@
     <div class="adminswiper">
       <span class="worktitle">首頁輪播作品管理</span>
       <span class="smalltitle">注意上傳圖片規格 1920 x 1080 像素 1MB 以下</span>
-      <v-card style="border-radius: 10px; width: 80%">
+      <v-card class="seiperCard">
         <swiper ref="mySwiper" :options="swiperOptions" class="swcontent">
           <swiper-slide v-for="(item, index) in pages" :key="index">
             <img class="sideItem" :src="item.image" />
@@ -15,12 +15,12 @@
       </v-card>
 
       <div class="row">
-        <v-card class="adminAdd col-3 mx-5 my-5">
+        <v-card class="adminAdd col col-lg-3 mx-9 mx-lg-5 my-5">
           <v-btn depressed icon class="addBtn" height="60" width="60" @click.stop="dialog = true">
             <v-icon size="35" class="addpuls" @click="dialog = true">mdi-plus</v-icon>
           </v-btn>
         </v-card>
-        <div class="card col-3 mx-5 my-5" v-for="(item, index) in pages" :key="index">
+        <div class="card col-lg-3 mx-lg-5 my-lg-5" v-for="(item, index) in pages" :key="index">
           <v-card class="imgcol" style="padding: 0">
             <v-btn icon class="cardBtn3" max-width="20" max-height="20" style="padding: 0; background-color: var(--color-red)" @click="deleteImg(item._id)">
               <v-icon size="10" color="white" class="justify-content-center; Btn3Icon">mdi-close</v-icon>

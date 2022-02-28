@@ -4,7 +4,7 @@
     <div class="content">
       <template>
         <div style="width: 100%">
-          <v-select :items="slots" label="搜尋類別" class="mb-5"></v-select>
+          <v-select :items="slots" label="搜尋類別" class="mb-5 mt-6 mt-lg-0"></v-select>
           <v-simple-table>
             <template>
               <thead>
@@ -49,10 +49,10 @@
                   </td>
                   <td class="text-center">
                     <router-link :to="`/owner/${owner._id}/ownerchats/`">
-                      <v-icon color="var(--color-white)" class="me-1 favIcon">mdi-message-outline</v-icon>
+                      <v-icon color="var(--color-white)" class="me-lg-1 favIcon">mdi-message-outline</v-icon>
                     </router-link>
                     <v-icon color="var(--color-white)" class="favIcon" @click="cantDo(index)">mdi-charity</v-icon>
-                    <v-icon color="var(--color-white)" class="favIconD ms-5" @click="NoDo(index)">mdi-delete</v-icon>
+                    <v-icon color="var(--color-white)" class="favIconD ms-lg-5" @click="NoDo(index)">mdi-delete</v-icon>
                   </td>
                 </tr>
               </tbody>

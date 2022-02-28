@@ -1,129 +1,20 @@
-// nav-------------------------
-.adminList {
-  position: absolute;
-  padding: 15px;
-  top: 35px;
-  right: -50px;
-  background-color: var(--color-white);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  display: none;
-  filter: drop-shadow(0px 5px 3px rgb(0, 0, 0));
-
-  .adlisttext {
-    color: var(--color-blue) !important;
-  }
-  .memBtn:hover .memIcon {
-    color: var(--color-red) !important;
-  }
-  .memBtn:hover a {
-    color: var(--color-red) !important;
-  }
-  .mg {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-}
-
-.navAD {
-  position: relative;
-  top: 20px;
-  color: var(--color-blue) !important;
-  border-right: 2px solid var(--color-blue);
-  a {
-    color: var(--color-blue) !important;
-    font-weight: 700;
-  }
-
-  a:hover {
-    color: var(--color-red) !important;
-  }
-}
-
-.adavatars {
-  height: 30px;
-  position: relative;
-  top: 11px;
-  cursor: pointer;
-}
-
-.adavatars:hover .down {
-  color: var(--color-red) !important;
-}
-
-// 登入紐
-.adlogin {
-  font-size: 20px;
-  font-weight: 500;
-  margin-top: 14px;
-}
-
-.adlogin:hover {
-  color: var(--color-red) !important;
-}
-
-#owner:hover .adminList {
-  display: block;
-  animation: divAnimation 0.3s linear forwards;
-}
-
-#owner {
-  padding-bottom: 50px;
-}
-
-@keyframes divAnimation {
-  100% {
-    transform: translateY(10px);
-  }
-}
-
-// AdminHome---------------------------------------------
-#AdminHome {
-  .Usersolgon {
-    background-color: var(--color-blue);
-    width: 135px;
-    height: 36px;
-    position: relative;
-    top: 13px;
-    z-index: -1;
-  }
-  .sidebar {
-    width: 400px;
-    height: 100vh;
-    filter: drop-shadow(0px 5px 3px rgb(0, 0, 0));
-    background: var(--color-deepwhite);
-    position: fixed;
-  }
-  .content {
-    width: 75%;
-    height: 100vh;
-    background: var(--color-white);
-    margin-left: 400px;
-  }
-  .avatarSidebar {
-    position: relative;
-    top: 100px;
-    left: 110px;
-  }
-
-  .adlisttextB {
-    color: var(--color-blue) !important;
-    font-weight: 700;
-  }
-  .selfmeanu {
-    width: 200px;
-    height: 500px;
-    // border: 1px solid red;
+@include lg {
+  // nav-------------------------
+  .adminList {
     position: absolute;
-    top: 300px;
-    left: 100px;
+    padding: 15px;
+    top: 35px;
+    right: -50px;
+    background-color: var(--color-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    filter: drop-shadow(0px 5px 3px rgb(0, 0, 0));
 
-    .memBtn {
-      width: 100%;
-      height: 45px;
+    .adlisttext {
+      color: var(--color-blue) !important;
     }
-
     .memBtn:hover .memIcon {
       color: var(--color-red) !important;
     }
@@ -135,378 +26,1042 @@
       margin-right: 10px;
     }
   }
-}
 
-// AdminUser----------------------------------------
-#adminuser {
-  // 主要內容的區域
-  background-color: var(--color-wihte);
-  // border: 1px solid rgba(255, 255, 255, 0.2);
-  width: 76.5%;
-  height: 95vh;
-  margin-left: 450px;
-  margin-top: -95vh;
-  padding-top: 3%;
-  padding-left: 2%;
-  overflow-y: auto;
-  overflow-x: hidden;
-  // display: flex;
-  justify-content: start;
-  color: var(--color-white);
-
-  a {
+  .navAD {
+    position: relative;
+    top: 20px;
     color: var(--color-blue) !important;
+    border-right: 2px solid var(--color-blue);
+    a {
+      color: var(--color-blue) !important;
+      font-weight: 700;
+    }
+
+    a:hover {
+      color: var(--color-red) !important;
+    }
   }
 
-  .content {
+  .adavatars {
+    height: 30px;
     position: relative;
-    width: 76.5%;
-    height: 80vh !important;
-    top: 0;
-    left: -400px;
-    height: 150px;
-    display: flex;
+    top: 11px;
+    cursor: pointer;
+  }
 
-    // 表標
-    .v-data-table > .v-data-table__wrapper > table > tbody > tr > th,
-    .v-data-table > .v-data-table__wrapper > table > thead > tr > th,
-    .v-data-table > .v-data-table__wrapper > table > tfoot > tr > th {
-      font-size: 1.2rem;
-      color: var(--color-blue);
-      font-weight: 700;
+  .adavatars:hover .down {
+    color: var(--color-red) !important;
+  }
+
+  // 登入紐
+  .adlogin {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 14px;
+  }
+
+  .adlogin:hover {
+    color: var(--color-red) !important;
+  }
+
+  #owner:hover .adminList {
+    display: block;
+    animation: divAnimation 0.3s linear forwards;
+  }
+
+  #owner {
+    padding-bottom: 50px;
+  }
+
+  @keyframes divAnimation {
+    100% {
+      transform: translateY(10px);
+    }
+  }
+
+  // AdminHome---------------------------------------------
+  #AdminHome {
+    .NAVbar {
+      background-color: var(--color-white) !important;
+    }
+    .Usersolgon {
+      background-color: var(--color-blue);
+      width: 135px;
+      height: 36px;
+      position: relative;
+      top: 13px;
+      z-index: -1;
+    }
+    .sidebar {
+      width: 400px;
+      height: 100vh;
+      filter: drop-shadow(0px 5px 3px rgb(0, 0, 0));
+      background: var(--color-deepwhite);
+      position: fixed;
+    }
+    .content {
+      width: 75%;
+      height: 100vh;
       background: var(--color-white);
-      border-bottom: 1px solid var(--color-blue);
+      margin-left: 400px;
+    }
+    .avatarSidebar {
+      position: relative;
+      top: 100px;
+      left: 110px;
     }
 
-    .mdi-menu-down::before {
-      color: var(--color-ddeepY);
+    .adlisttextB {
+      color: var(--color-blue) !important;
+      font-weight: 700;
+    }
+    .selfmeanu {
+      width: 200px;
+      height: 500px;
+      // border: 1px solid red;
+      position: absolute;
+      top: 300px;
+      left: 100px;
+
+      .memBtn {
+        width: 100%;
+        height: 45px;
+      }
+
+      .memBtn:hover .memIcon {
+        color: var(--color-red) !important;
+      }
+      .memBtn:hover a {
+        color: var(--color-red) !important;
+      }
+      .mg {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  // AdminUser----------------------------------------
+  #adminuser {
+    // 主要內容的區域
+    background-color: var(--color-wihte);
+    // border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 76.5%;
+    height: 95vh;
+    margin-left: 450px;
+    margin-top: -95vh;
+    padding-top: 3%;
+    padding-left: 2%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    // display: flex;
+    justify-content: start;
+    color: var(--color-white);
+
+    a {
+      color: var(--color-blue) !important;
     }
 
-    .mdi-close::before {
-      color: var(--color-ddeepY);
+    .content {
+      position: relative;
+      width: 76.5%;
+      height: 80vh !important;
+      top: 0;
+      left: -400px;
+      height: 150px;
+      display: flex;
+
+      // 表標
+      .v-data-table > .v-data-table__wrapper > table > tbody > tr > th,
+      .v-data-table > .v-data-table__wrapper > table > thead > tr > th,
+      .v-data-table > .v-data-table__wrapper > table > tfoot > tr > th {
+        font-size: 1.2rem;
+        color: var(--color-blue);
+        font-weight: 700;
+        background: var(--color-white);
+        border-bottom: 1px solid var(--color-blue);
+      }
+
+      .mdi-menu-down::before {
+        color: var(--color-ddeepY);
+      }
+
+      .mdi-close::before {
+        color: var(--color-ddeepY);
+      }
+
+      // .theme--light.v-input {
+      //   color: var(--color-white);
+      // }
+
+      .theme--light.v-messages {
+        color: var(--color-ddeepY) !important;
+      }
+
+      .v-select__selections {
+        color: var(--color-ddeepY) !important;
+      }
+
+      .theme--light.v-label {
+        color: var(--color-ddeepY);
+      }
+
+      .theme--light.v-text-field > .v-input__control > .v-input__slot:before {
+        border: 1px solid var(--color-ddeepY) !important;
+      }
+
+      .v-text-field fieldset,
+      .v-text-field .v-input__control {
+        color: var(--color-ddeepY);
+      }
+
+      // input字級
+      .theme--light.v-input input,
+      .theme--light.v-input textarea {
+        color: var(--color-blue);
+        font-size: 25px;
+        margin-bottom: 10px;
+        text-align: center;
+        font-weight: 700;
+      }
+
+      .v-application .primary--text {
+        color: var(--color-blue);
+        caret-color: var(--color-blue);
+      }
+
+      // 表內文色
+      .theme--light.v-data-table {
+        color: var(--color-blue);
+        background: var(--color-white);
+      }
+
+      // 表高度
+      .v-data-table > .v-data-table__wrapper > table > tbody > tr > td,
+      .v-data-table > .v-data-table__wrapper > table > thead > tr > td,
+      .v-data-table > .v-data-table__wrapper > table > tfoot > tr > td {
+        height: 80px;
+      }
+
+      // 表內文字級
+      .v-data-table > .v-data-table__wrapper > table > tbody > tr > td,
+      .v-data-table > .v-data-table__wrapper > table > thead > tr > td,
+      .v-data-table > .v-data-table__wrapper > table > tfoot > tr > td {
+        font-size: 1rem;
+      }
+
+      .favIcon:hover {
+        color: var(--color-ddeepY) !important;
+      }
+
+      .favIconD:hover {
+        color: var(--color-red) !important;
+      }
     }
-
-    // .theme--light.v-input {
-    //   color: var(--color-white);
-    // }
-
-    .theme--light.v-messages {
-      color: var(--color-ddeepY) !important;
+    tbody {
+      tr:hover {
+        background-color: var(--color-deepwhite) !important;
+      }
     }
+  }
 
-    .v-select__selections {
-      color: var(--color-ddeepY) !important;
+  // adminChats----------------------------------------------
+  #adminChats {
+    background-color: var(--color-wihte);
+    // border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 76.5%;
+    height: 95vh;
+    margin-left: 450px;
+    margin-top: -95vh;
+    padding-top: 3%;
+    padding-left: 2%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    // display: flex;
+    justify-content: start;
+    color: var(--color-white);
+
+    .content {
+      position: relative;
+      width: 76.5%;
+      height: 80vh !important;
+      top: 0;
+      left: -400px;
+      height: 150px;
+      display: flex;
+      // background-color: rgb(182, 119, 119);
+      .chatlist {
+        width: 300px;
+        // background-color: red;
+        height: 100%;
+        margin-right: 50px;
+        .theme--light.v-subheader {
+          color: var(--color-blue);
+          font-size: 20px;
+          border-bottom: 1px solid var(--color-blue);
+          margin-bottom: 15px;
+          font-size: 700;
+        }
+        .theme--light.v-list-item:not(.v-list-item--active):not(.v-list-item--disabled) {
+          color: var(--color-blue);
+        }
+      }
+      .main {
+        width: 100%;
+        // background-color: green;
+        height: 100%;
+      }
+      .text {
+        // background-color: red;
+        text-align: center;
+        font-size: 1.5rem;
+        color: var(--color-blue) !important;
+        font-weight: 700;
+      }
     }
-
-    .theme--light.v-label {
-      color: var(--color-ddeepY);
+    .theme--light.v-input input,
+    .theme--light.v-input textarea {
+      color: var(--color-deepblue) !important;
+      font-size: 25px;
+      margin-bottom: 10px;
+      text-align: left;
     }
-
-    .theme--light.v-text-field > .v-input__control > .v-input__slot:before {
-      border: 1px solid var(--color-ddeepY) !important;
-    }
-
     .v-text-field fieldset,
     .v-text-field .v-input__control {
       color: var(--color-ddeepY);
     }
 
-    // input字級
-    .theme--light.v-input input,
-    .theme--light.v-input textarea {
+    .chatup {
+      height: 600px;
+      overflow-y: scroll;
+      margin: 0;
+      background: var(--color-deepwhite);
+      font-size: 1rem;
+      .membermes {
+        background: var(--color-blue);
+        color: white;
+        border-radius: 15px;
+        padding: 10px;
+      }
+
+      .Me {
+        background: white;
+        border-radius: 15px;
+        padding: 10px;
+      }
+
+      .Me-oneline {
+        background: white;
+        border-radius: 15px;
+        padding: 10px;
+      }
+    }
+
+    .chatin {
+      background: var(--color-white);
+      position: relative;
+    }
+    .mesbtn {
+      margin-bottom: 25px;
+      margin-right: 20px;
+    }
+  }
+
+  // adminwork----------------------------------------------
+  #adminwork {
+    // 主要內容的區域
+    background-color: var(--color-wihte);
+    // border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 76.5%;
+    height: 95vh;
+    margin-left: 450px;
+    margin-top: -95vh;
+    padding-top: 3%;
+    padding-left: 2%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    // display: flex;
+    color: var(--color-blue);
+
+    .worktitle {
+      height: 50px;
+      width: 100%;
+      font-size: 30px;
+      font-weight: 600;
+      // border: 1px solid white;
+      position: relative;
       color: var(--color-blue);
-      font-size: 25px;
-      margin-bottom: 10px;
       text-align: center;
+    }
+    .worktitle::after {
+      content: '';
+      width: 100%;
+      height: 48px;
+      border-bottom: 1px solid var(--color-blue);
+      position: absolute;
+      top: 0;
+      left: 0;
+      text-align: center;
+    }
+
+    .seiperCard {
+      width: 80%;
+      border-radius: 10px;
+    }
+
+    .smalltitle {
+      margin-bottom: 30px;
+      font-size: 1.2rem;
+      color: var(--color-red);
       font-weight: 700;
     }
 
-    .v-application .primary--text {
-      color: var(--color-blue);
-      caret-color: var(--color-blue);
+    .adminswiper {
+      // background-color: red;
+      width: 76.5%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
     }
 
-    // 表內文色
-    .theme--light.v-data-table {
-      color: var(--color-blue);
-      background: var(--color-white);
+    .swcontent {
+      margin-top: -10px;
+      width: 100%;
+      display: flex;
     }
 
-    // 表高度
-    .v-data-table > .v-data-table__wrapper > table > tbody > tr > td,
-    .v-data-table > .v-data-table__wrapper > table > thead > tr > td,
-    .v-data-table > .v-data-table__wrapper > table > tfoot > tr > td {
-      height: 80px;
+    .sideItem {
+      width: 100%;
+      height: 100%;
+      display: flex;
     }
 
-    // 表內文字級
-    .v-data-table > .v-data-table__wrapper > table > tbody > tr > td,
-    .v-data-table > .v-data-table__wrapper > table > thead > tr > td,
-    .v-data-table > .v-data-table__wrapper > table > tfoot > tr > td {
-      font-size: 1rem;
+    .swiper-button-prev:after,
+    .swiper-container-rtl .swiper-button-next:after {
+      position: absolute;
+      top: 0;
+      left: 0px;
     }
 
-    .favIcon:hover {
-      color: var(--color-ddeepY) !important;
+    .row {
+      margin-top: 30px;
+      width: 100%;
+      margin-left: 0px;
+      margin-right: 0px;
+      justify-content: start;
+      margin-left: 14%;
+      // background: red;
     }
 
-    .favIconD:hover {
+    .card {
+      // background: red;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      flex-direction: row;
+      text-align: left;
+    }
+
+    .item {
+      margin-top: 10px;
+    }
+
+    .imgcol {
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .imgcontent {
+      width: 100%;
+    }
+
+    .adminAdd {
+      background: rgba(0, 0, 0, 0);
+      height: 190px;
+      border: 3px dashed var(--color-blue);
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .adminAdd:hover {
+      border: 3px dashed var(--color-red);
+      transition: 0.5s;
+    }
+
+    .addBtn {
+      background: rgba(0, 0, 0, 0);
+      border: 3px dashed var(--color-blue);
+    }
+
+    .adminAdd:hover .addBtn {
+      transform: scale(1.1);
+      color: var(--color-red) !important;
+      border: 3px dashed var(--color-red);
+    }
+
+    .Imgform {
+      display: flex !important;
+      justify-content: center !important;
+    }
+
+    .cardBtn3 {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      z-index: 3;
+    }
+
+    .cardBtn3:hover .Btn3Icon {
+      color: var(--color-lightY) !important;
+    }
+  }
+}
+
+@include xs {
+  // nav-------------------------
+  .Usersolgon {
+    border: 1px solid var(--color-white);
+    width: 85px;
+    height: 30px;
+    position: relative;
+    top: 7px;
+  }
+
+  .adminList {
+    position: absolute;
+    padding: 15px;
+    top: 35px;
+    right: -50px;
+    background-color: var(--color-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    filter: drop-shadow(0px 5px 3px rgb(0, 0, 0));
+
+    .adlisttext {
+      color: var(--color-blue) !important;
+    }
+    .memBtn:hover .memIcon {
+      color: var(--color-red) !important;
+    }
+    .memBtn:hover a {
+      color: var(--color-red) !important;
+    }
+    .mg {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+
+  .navAD {
+    position: relative;
+    top: 10px;
+    border-right: 1px solid var(--color-blue);
+
+    a {
+      font-weight: 700 !important;
+      color: var(--color-blue) !important;
+    }
+    a:hover {
       color: var(--color-red) !important;
     }
   }
-  tbody {
-    tr:hover {
-      background-color: var(--color-deepwhite) !important;
+
+  .adavatars {
+    height: 30px;
+    position: relative;
+    top: 11px;
+    cursor: pointer;
+  }
+
+  .adavatars:hover .down {
+    color: var(--color-red) !important;
+  }
+
+  // 登入紐
+  .adlogin {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 14px;
+  }
+
+  .adlogin:hover {
+    color: var(--color-red) !important;
+  }
+
+  .xsMenuBtnAD {
+    margin-top: 4px;
+    margin-left: -26px;
+    margin-right: -20px;
+    position: absolute;
+    top: 0px;
+    cursor: pointer;
+  }
+
+  .xsMenuBtnAD:hover {
+    color: var(--color-red) !important;
+    // border: 1px solid var(--color-lightY) !important;
+  }
+
+  #owner:hover .adminList {
+    display: block;
+    animation: divAnimation 0.3s linear forwards;
+  }
+
+  #owner {
+    padding-bottom: 50px;
+  }
+
+  @keyframes divAnimation {
+    100% {
+      transform: translateY(10px);
     }
   }
-}
 
-// adminChats----------------------------------------------
-#adminChats {
-  background-color: var(--color-wihte);
-  // border: 1px solid rgba(255, 255, 255, 0.2);
-  width: 76.5%;
-  height: 95vh;
-  margin-left: 450px;
-  margin-top: -95vh;
-  padding-top: 3%;
-  padding-left: 2%;
-  overflow-y: auto;
-  overflow-x: hidden;
-  // display: flex;
-  justify-content: start;
-  color: var(--color-white);
+  // AdminHome---------------------------------------------
+  #AdminHome {
+    .NAVbar {
+      background-color: var(--color-white) !important;
+    }
+    .Usersolgon {
+      background-color: var(--color-blue);
+      width: 86px;
+      height: 31px;
+      position: relative;
+      top: 6px;
+    }
 
-  .content {
-    position: relative;
-    width: 76.5%;
-    height: 80vh !important;
-    top: 0;
-    left: -400px;
-    height: 150px;
-    display: flex;
-    // background-color: rgb(182, 119, 119);
-    .chatlist {
-      width: 300px;
-      // background-color: red;
-      height: 100%;
-      margin-right: 50px;
-      .theme--light.v-subheader {
-        color: var(--color-blue);
-        font-size: 20px;
-        border-bottom: 1px solid var(--color-blue);
-        margin-bottom: 15px;
-        font-size: 700;
-      }
-      .theme--light.v-list-item:not(.v-list-item--active):not(.v-list-item--disabled) {
-        color: var(--color-blue);
-      }
+    .xsMenuIconAD {
+      font-size: 20px;
+      margin-top: 4px;
+      position: relative;
+      top: 0px;
+      cursor: pointer;
     }
-    .main {
-      width: 100%;
-      // background-color: green;
-      height: 100%;
+
+    .xsMenuIconAD:hover {
+      color: var(--color-red) !important;
+      // border: 1px solid var(--color-lightY) !important;
     }
-    .text {
-      // background-color: red;
-      text-align: center;
-      font-size: 1.5rem;
+
+    .sidebar {
+      display: none;
+    }
+    // .content {
+    //   width: 100%;
+    //   height: 100vh;
+    //   background: var(--color-red);
+    //   // margin-left: 400px;
+    // }
+    .avatarSidebar {
+      display: none;
+    }
+
+    .adlisttextB {
+      display: none;
+    }
+    .selfmeanu {
+      display: none;
+    }
+  }
+
+  // AdminUser----------------------------------------
+  #adminuser {
+    // 主要內容的區域
+    background-color: var(--color-wihte);
+    // border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 100%;
+    height: 95vh;
+    // margin-left: 450px;
+    margin-top: -95vh;
+    padding-top: 3%;
+    padding-left: 2%;
+    // overflow-y: auto;
+    // overflow-x: auto;
+    // display: flex;
+    justify-content: start;
+    color: var(--color-white);
+
+    a {
       color: var(--color-blue) !important;
+    }
+
+    .content {
+      // position: relative;
+      // width: 76.5%;
+      // height: 80vh !important;
+      // top: 0;
+      // left: -400px;
+      // height: 150px;
+      // display: flex;
+      // background-color: red;
+
+      // 表標
+      .v-data-table > .v-data-table__wrapper > table > tbody > tr > th,
+      .v-data-table > .v-data-table__wrapper > table > thead > tr > th,
+      .v-data-table > .v-data-table__wrapper > table > tfoot > tr > th {
+        font-size: 1.2rem;
+        color: var(--color-blue);
+        font-weight: 700;
+        background: var(--color-white);
+        border-bottom: 1px solid var(--color-blue);
+      }
+
+      .mdi-menu-down::before {
+        color: var(--color-ddeepY);
+      }
+
+      .mdi-close::before {
+        color: var(--color-ddeepY);
+      }
+
+      // .theme--light.v-input {
+      //   color: var(--color-white);
+      // }
+
+      .theme--light.v-messages {
+        color: var(--color-ddeepY) !important;
+      }
+
+      .v-select__selections {
+        color: var(--color-ddeepY) !important;
+      }
+
+      .theme--light.v-label {
+        color: var(--color-ddeepY);
+      }
+
+      .theme--light.v-text-field > .v-input__control > .v-input__slot:before {
+        border: 1px solid var(--color-ddeepY) !important;
+      }
+
+      .v-text-field fieldset,
+      .v-text-field .v-input__control {
+        color: var(--color-ddeepY);
+      }
+
+      // input字級
+      .theme--light.v-input input,
+      .theme--light.v-input textarea {
+        color: var(--color-blue);
+        font-size: 25px;
+        margin-bottom: 10px;
+        text-align: center;
+        font-weight: 700;
+      }
+
+      .v-application .primary--text {
+        color: var(--color-blue);
+        caret-color: var(--color-blue);
+      }
+
+      // 表內文色
+      .theme--light.v-data-table {
+        color: var(--color-blue);
+        background: var(--color-white);
+      }
+
+      // 表高度
+      .v-data-table > .v-data-table__wrapper > table > tbody > tr > td,
+      .v-data-table > .v-data-table__wrapper > table > thead > tr > td,
+      .v-data-table > .v-data-table__wrapper > table > tfoot > tr > td {
+        height: 80px;
+      }
+
+      // 表內文字級
+      .v-data-table > .v-data-table__wrapper > table > tbody > tr > td,
+      .v-data-table > .v-data-table__wrapper > table > thead > tr > td,
+      .v-data-table > .v-data-table__wrapper > table > tfoot > tr > td {
+        font-size: 1rem;
+      }
+
+      .favIcon:hover {
+        color: var(--color-ddeepY) !important;
+      }
+
+      .favIconD:hover {
+        color: var(--color-red) !important;
+      }
+    }
+    tbody {
+      tr:hover {
+        background-color: var(--color-deepwhite) !important;
+      }
+    }
+  }
+
+  // adminChats----------------------------------------------
+  #adminChats {
+    background-color: var(--color-white);
+    // border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 100%;
+    height: 95vh;
+    // margin-left: 450px;
+    margin-top: -95vh;
+    padding-top: 3%;
+    padding-left: 2%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    // display: flex;
+    justify-content: start;
+    color: var(--color-white);
+
+    .content {
+      // position: relative;
+      // width: 100%;
+      // height: 80vh !important;
+      // top: 0;
+      // left: -400px;
+      // height: 150px;
+      // display: flex;
+      // background-color: rgb(182, 119, 119);
+      .chatlist {
+        width: 100%;
+        background-color: var(--color-white);
+        height: 100%;
+        margin-right: 50px;
+        padding-bottom: 50px;
+        padding-top: 10px;
+        .theme--light.v-subheader {
+          color: var(--color-blue);
+          font-size: 20px;
+          border-bottom: 1px solid var(--color-blue);
+          margin-bottom: 15px;
+          font-size: 700;
+        }
+        .theme--light.v-list-item:not(.v-list-item--active):not(.v-list-item--disabled) {
+          color: var(--color-blue);
+        }
+      }
+      .main {
+        width: 100%;
+        // background-color: green;
+        height: 100%;
+      }
+      .text {
+        // background-color: red;
+        text-align: center;
+        font-size: 1.5rem;
+        color: var(--color-blue) !important;
+        font-weight: 700;
+      }
+    }
+    .theme--light.v-input input,
+    .theme--light.v-input textarea {
+      color: var(--color-deepblue) !important;
+      font-size: 25px;
+      margin-bottom: 10px;
+      text-align: left;
+    }
+    .v-text-field fieldset,
+    .v-text-field .v-input__control {
+      color: var(--color-ddeepY);
+    }
+
+    .chatup {
+      height: 600px;
+      overflow-y: scroll;
+      margin: 0;
+      background: var(--color-deepwhite);
+      font-size: 1rem;
+      .membermes {
+        background: var(--color-blue);
+        color: white;
+        border-radius: 15px;
+        padding: 10px;
+      }
+
+      .Me {
+        background: white;
+        border-radius: 15px;
+        padding: 10px;
+      }
+
+      .Me-oneline {
+        background: white;
+        border-radius: 15px;
+        padding: 10px;
+      }
+    }
+
+    .chatin {
+      background: var(--color-white);
+      position: relative;
+    }
+    .mesbtn {
+      margin-bottom: 25px;
+      margin-right: 20px;
+    }
+
+    .ChatBtn {
+      margin-top: 30px !important;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  // adminwork----------------------------------------------
+  #adminwork {
+    // 主要內容的區域
+    background-color: var(--color-wihte);
+    // border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 100%;
+    height: 95vh;
+    // margin-left: 450px;
+    margin-top: -95vh;
+    padding-top: 3%;
+    // padding-left: 2%;
+    // overflow-y: auto;
+    // overflow-x: hidden;
+    // display: flex;
+    color: var(--color-blue);
+
+    .worktitle {
+      height: 50px;
+      width: 100%;
+      font-size: 30px;
+      font-weight: 600;
+      // border: 1px solid white;
+      position: relative;
+      color: var(--color-blue);
+      text-align: center;
+    }
+    .worktitle::after {
+      content: '';
+      width: 100%;
+      height: 48px;
+      border-bottom: 1px solid var(--color-blue);
+      position: absolute;
+      top: 0;
+      left: 0;
+      text-align: center;
+    }
+
+    .seiperCard {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .smalltitle {
+      margin-bottom: 30px;
+      font-size: 1rem;
+      color: var(--color-red);
       font-weight: 700;
     }
-  }
-  .theme--light.v-input input,
-  .theme--light.v-input textarea {
-    color: var(--color-deepblue) !important;
-    font-size: 25px;
-    margin-bottom: 10px;
-    text-align: left;
-  }
-  .v-text-field fieldset,
-  .v-text-field .v-input__control {
-    color: var(--color-ddeepY);
-  }
 
-  .chatup {
-    height: 600px;
-    overflow-y: scroll;
-    margin: 0;
-    background: var(--color-deepwhite);
-    font-size: 1rem;
-    .membermes {
-      background: var(--color-blue);
-      color: white;
-      border-radius: 15px;
-      padding: 10px;
+    .adminswiper {
+      // background-color: red;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
     }
 
-    .Me {
-      background: white;
-      border-radius: 15px;
-      padding: 10px;
+    .swcontent {
+      margin-top: -10px;
+      width: 100%;
+      height: 240px !important;
+      // display: flex;
+      // background: red !important;
     }
 
-    .Me-oneline {
-      background: white;
-      border-radius: 15px;
-      padding: 10px;
+    .sideItem {
+      width: 100%;
+      margin-top: -50px !important;
+      padding-top: 0px !important;
+
+      // display: flex;
     }
-  }
 
-  .chatin {
-    background: var(--color-white);
-    position: relative;
-  }
-  .mesbtn {
-    margin-bottom: 25px;
-    margin-right: 20px;
-  }
-}
+    .swiper-button-prev:after,
+    .swiper-container-rtl .swiper-button-next:after {
+      position: absolute;
+      top: 0;
+      left: 0px;
+    }
 
-// adminwork----------------------------------------------
-#adminwork {
-  // 主要內容的區域
-  background-color: var(--color-wihte);
-  // border: 1px solid rgba(255, 255, 255, 0.2);
-  width: 76.5%;
-  height: 95vh;
-  margin-left: 450px;
-  margin-top: -95vh;
-  padding-top: 3%;
-  padding-left: 2%;
-  overflow-y: auto;
-  overflow-x: hidden;
-  // display: flex;
-  color: var(--color-blue);
+    .row {
+      margin-top: 30px;
+      // width: 100%;
+      margin-left: 0px;
+      margin-right: 0px;
+      justify-content: center;
+      // margin-left: 14%;
+      background: var(--color-deepwhite);
+      padding-bottom: 50px;
+    }
 
-  .worktitle {
-    height: 50px;
-    width: 100%;
-    font-size: 30px;
-    font-weight: 600;
-    // border: 1px solid white;
-    position: relative;
-    color: var(--color-blue);
-    text-align: center;
-  }
-  .worktitle::after {
-    content: '';
-    width: 100%;
-    height: 48px;
-    border-bottom: 1px solid var(--color-blue);
-    position: absolute;
-    top: 0;
-    left: 0;
-    text-align: center;
-  }
+    .card {
+      width: 80%;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      flex-direction: row;
+      text-align: left;
+      margin-top: 30px;
+      background: var(--color-deepwhite);
+    }
 
-  .smalltitle {
-    margin-bottom: 30px;
-    font-size: 1.2rem;
-    color: var(--color-red);
-    font-weight: 700;
-  }
+    .item {
+      margin-top: 10px;
+    }
 
-  .adminswiper {
-    // background-color: red;
-    width: 76.5%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-  }
+    .imgcol {
+      width: 350px;
+      overflow: hidden;
+    }
 
-  .swcontent {
-    margin-top: -10px;
-    width: 100%;
-    display: flex;
-  }
+    .imgcontent {
+      width: 100%;
+    }
 
-  .sideItem {
-    width: 100%;
-    height: 100%;
-    display: flex;
-  }
+    .adminAdd {
+      background: rgba(0, 0, 0, 0);
+      height: 170px;
+      border: 3px dashed var(--color-blue);
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-  .swiper-button-prev:after,
-  .swiper-container-rtl .swiper-button-next:after {
-    position: absolute;
-    top: 0;
-    left: 0px;
-  }
+    .adminAdd:hover {
+      border: 3px dashed var(--color-red);
+      transition: 0.5s;
+    }
 
-  .row {
-    margin-top: 30px;
-    width: 100%;
-    margin-left: 0px;
-    margin-right: 0px;
-    justify-content: start;
-    margin-left: 14%;
-    // background: red;
-  }
+    .addBtn {
+      background: rgba(0, 0, 0, 0);
+      border: 3px dashed var(--color-blue);
+    }
 
-  .card {
-    // background: red;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    flex-direction: row;
-    text-align: left;
-  }
+    .adminAdd:hover .addBtn {
+      transform: scale(1.1);
+      color: var(--color-red) !important;
+      border: 3px dashed var(--color-red);
+    }
 
-  .item {
-    margin-top: 10px;
-  }
+    .Imgform {
+      display: flex !important;
+      justify-content: center !important;
+    }
 
-  .imgcol {
-    width: 300px;
-    overflow: hidden;
-  }
+    .cardBtn3 {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      z-index: 3;
+    }
 
-  .imgcontent {
-    width: 100%;
-  }
-
-  .adminAdd {
-    background: rgba(0, 0, 0, 0);
-    height: 153px;
-    border: 3px dashed var(--color-blue);
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .adminAdd:hover {
-    border: 3px dashed var(--color-red);
-    transition: 0.5s;
-  }
-
-  .addBtn {
-    background: rgba(0, 0, 0, 0);
-    border: 3px dashed var(--color-blue);
-  }
-
-  .adminAdd:hover .addBtn {
-    transform: scale(1.1);
-    color: var(--color-red) !important;
-    border: 3px dashed var(--color-red);
-  }
-
-  .Imgform {
-    display: flex !important;
-    justify-content: center !important;
-  }
-
-  .cardBtn3 {
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    z-index: 3;
-  }
-
-  .cardBtn3:hover .Btn3Icon {
-    color: var(--color-lightY) !important;
+    .cardBtn3:hover .Btn3Icon {
+      color: var(--color-lightY) !important;
+    }
   }
 }

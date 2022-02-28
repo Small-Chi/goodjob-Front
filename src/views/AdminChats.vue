@@ -1,8 +1,8 @@
 <template>
   <div id="adminChats">
     <div class="content">
-      <div class="ChatBtn me-n16 mt-2">
-        <v-btn class="mb-2 pe-7" rounded color="var(--color-blue)" style="color: var(--color-deepwhite)" :to="`/admin/adminChats`">
+      <div class="ChatBtn me-lg-n16">
+        <v-btn class="mb-lg-2 pe-7" rounded color="var(--color-blue)" style="color: var(--color-deepwhite)" :to="`/admin/adminChats`">
           <v-icon class="me-1">mdi-account-outline</v-icon>
           會員
         </v-btn>

@@ -28,18 +28,14 @@
   }
 }
 
-@include xs {
-  .swiper {
-    .centerLogo {
-      width: 100px !important;
-    }
-  }
-}
+// @include xs {
+// }
 
-@include lg {
-  .swiper {
-    .centerLogo {
-      width: 250px !important;
-    }
-  }
-}
+// @include sm {
+// }
+
+// @include md {
+// }
+
+// @include lg {
+// }

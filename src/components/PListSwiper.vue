@@ -1,8 +1,13 @@
 <template>
-  <div class="listswiper">
+  <div id="listswiper">
     <div class="name">
       <router-link :to="`/user/${portfolio._id}/userself/`">
-        <v-avatar size="90" class="me-2 avatarSwipwer">
+        <v-avatar size="90" class="me-2 d-none d-lg-flex avatarSwipwer">
+          <v-img :src="'https://source.boringavatars.com/beam/120/' + portfolio.account"></v-img>
+        </v-avatar>
+      </router-link>
+      <router-link :to="`/user/${portfolio._id}/userself/`">
+        <v-avatar size="60" class="me-1 d-flex d-lg-none avatarSwipwer">
           <v-img :src="'https://source.boringavatars.com/beam/120/' + portfolio.account"></v-img>
         </v-avatar>
       </router-link>
@@ -72,8 +77,8 @@
       </swiper-slide>
 
       <!-- <div class="swiper-pagination" slot="pagination"></div> -->
-      <div class="swiper-button-next" slot="button-next"></div>
-      <div class="swiper-button-prev" slot="button-prev"></div>
+      <div class="swiper-button-next d-none d-lg-flex" slot="button-next"></div>
+      <div class="swiper-button-prev d-none d-lg-flex" slot="button-prev"></div>
     </swiper>
   </div>
 </template>
@@ -106,9 +111,9 @@
           },
           // freeMode: true,
           breakpoints: {
-            // 576: {
-            //   slidesPerView: 1
-            // },
+            576: {
+              slidesPerView: 1
+            },
             // 768: {
             //   slidesPerView: 3
             // },

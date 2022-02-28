@@ -112,11 +112,7 @@
               <li>
                 <v-btn depressed color="var(--color-blue)" class="memBtn" :to="`/owner/${owner._id}/ownerdeal/`">
                   <v-icon class="memIcon me-3" color="var(--color-white)">mdi-charity</v-icon>
-                  <a class="textWhite ctext1">
-                    已
-                    <span class="mx-1">結</span>
-                    案
-                  </a>
+                  <a class="textWhite ctext1">進行結案</a>
                 </v-btn>
               </li>
               <li>
@@ -175,25 +171,39 @@
           </v-avatar>
           <v-icon class="textWhite down">mdi-chevron-down</v-icon>
         </div>
-        <v-btn color="rgba(0,0,0,0)" class="textWhite login ms-n6 d-none d-md-flex" plain v-if="user.isuserLogin && !owner.isownerLogin" @click="userlogout">
+        <v-btn
+          color="rgba(0,0,0,0)"
+          class="textWhite login ms-0 ms-xl-n6 d-none d-md-flex"
+          plain
+          v-if="user.isuserLogin && !owner.isownerLogin"
+          @click="userlogout"
+        >
           <v-icon class="me-2">mdi-logout-variant</v-icon>
           <!-- 登出 -->
         </v-btn>
-        <v-btn color="rgba(0,0,0,0)" class="textWhite login ms-n6 d-none d-md-flex" plain v-if="!user.isuserLogin && owner.isownerLogin" @click="ownerlogout">
+        <v-btn
+          color="rgba(0,0,0,0)"
+          class="textWhite login ms-0 ms-xl-n6 d-none d-md-flex"
+          plain
+          v-if="!user.isuserLogin && owner.isownerLogin"
+          @click="ownerlogout"
+        >
           <v-icon class="me-2">mdi-logout-variant</v-icon>
           <!-- 登出 -->
         </v-btn>
 
         <!-- xs User sidebar --------------------------------------------------------------->
         <label for="checklogin">
-          <v-icon class="textWhite xsMenuBtn ms-n2 d-sm-flex d-xl-none me-n1" v-if="user.isuserLogin && !user.isAdmin">mdi-dots-horizontal</v-icon>
+          <v-icon class="textWhite xsMenuBtn ms-n2 d-sm-flex d-md-none d-md-none d-xl-none me-n1" v-if="user.isuserLogin && !user.isAdmin">
+            mdi-dots-horizontal
+          </v-icon>
         </label>
         <input id="checklogin" type="checkbox" />
         <div id="usersidebar" v-if="user.isuserLogin && !user.isAdmin">
           <label for="checklogin">
-            <v-icon size="30" color="var(--color-white)" class="d-xl-none d-xs-flex mt-2 ms-2 closeX">mdi-close</v-icon>
+            <v-icon size="30" color="var(--color-white)" class="d-md-none d-xl-none d-xs-flex mt-2 ms-2 closeX">mdi-close</v-icon>
           </label>
-          <div class="sidebarAva d-xl-none">
+          <div class="sidebarAva d-md-none d-xl-none">
             <v-avatar size="90" class="me-2 mb-6">
               <v-img :src="'https://source.boringavatars.com/beam/120/' + user.account"></v-img>
             </v-avatar>
@@ -263,14 +273,14 @@
 
         <!-- xs Owner sidebar --------------------------------------------------------------->
         <label for="checkloginO">
-          <v-icon class="textWhite xsMenuBtn ms-n2 d-sm-flex d-xl-none me-n1" v-if="owner.isownerLogin">mdi-dots-horizontal</v-icon>
+          <v-icon class="textWhite xsMenuBtn ms-n2 d-sm-flex d-md-none d-xl-none me-n1" v-if="owner.isownerLogin">mdi-dots-horizontal</v-icon>
         </label>
         <input id="checkloginO" type="checkbox" />
         <div id="ownersidebar" v-if="owner.isownerLogin">
           <label for="checkloginO">
-            <v-icon size="30" color="var(--color-white)" class="d-xl-none d-xs-flex mt-2 ms-2 closeX">mdi-close</v-icon>
+            <v-icon size="30" color="var(--color-white)" class="d-md-none d-xl-none d-xs-flex mt-2 ms-2 closeX">mdi-close</v-icon>
           </label>
-          <div class="sidebarAva d-xl-none">
+          <div class="sidebarAva d-md-none d-xl-none">
             <v-avatar size="90" class="me-2 mb-6">
               <v-img :src="'https://source.boringavatars.com/beam/120/' + owner.account"></v-img>
             </v-avatar>
@@ -302,11 +312,7 @@
               <li>
                 <v-btn depressed color="var(--color-blue)" class="memBtn" :to="`/owner/${owner._id}/ownerdeal/`">
                   <v-icon class="memIcon me-3" color="var(--color-white)">mdi-charity</v-icon>
-                  <a class="textWhite ctext1">
-                    已
-                    <span class="mx-1">結</span>
-                    案
-                  </a>
+                  <a class="textWhite ctext1">進行結案</a>
                 </v-btn>
               </li>
               <li>
@@ -340,14 +346,14 @@
 
         <!-- xs Admin sidebar --------------------------------------------------------------->
         <label for="checkloginA">
-          <v-icon class="textWhite xsMenuBtn ms-n2 d-sm-flex d-xl-none me-n1" v-if="user.isAdmin">mdi-dots-horizontal</v-icon>
+          <v-icon class="textWhite xsMenuBtn ms-n2 d-sm-flex d-md-none d-xl-none me-n1" v-if="user.isAdmin">mdi-dots-horizontal</v-icon>
         </label>
         <input id="checkloginA" type="checkbox" />
         <div id="adminsidebar" v-if="user.isAdmin">
           <label for="checkloginA">
-            <v-icon size="30" color="var(--color-blue)" class="d-xl-none d-xs-flex mt-2 ms-2 closeXO">mdi-close</v-icon>
+            <v-icon size="30" color="var(--color-blue)" class="d-md-none d-xl-none d-xs-flex mt-2 ms-2 closeXO">mdi-close</v-icon>
           </label>
-          <div class="sidebarAva d-xl-none">
+          <div class="sidebarAva d-md-none d-xl-none">
             <v-avatar size="90" class="me-2 mb-6">
               <v-img :src="'https://source.boringavatars.com/beam/120/' + user.account + `17`"></v-img>
             </v-avatar>

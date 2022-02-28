@@ -2,46 +2,49 @@
   <!-- 指定的作品頁面 -->
   <div id="protfolioPage">
     <div class="content">
-      <div class="d-flex">
-        <span class="username">{{ pname }}</span>
+      <div class="pagtitle">
+        <div class="d-flex">
+          <span class="username">{{ pname }}</span>
+        </div>
+        <div class="d-flex">
+          <div class="tag">{{ category.big }}</div>
+          <div class="tag">{{ category.small }}</div>
+        </div>
+        <v-btn class="cardBtn" style="padding: 0" color="var(--color-red)" @click="addfavorite">
+          <v-icon size="22" color="white" class="justify-content-center; Btn1Icon">mdi-heart</v-icon>
+          <div class="heartNum">收藏</div>
+        </v-btn>
       </div>
-      <div class="d-flex">
-        <div class="tag">{{ category.big }}</div>
-        <div class="tag">{{ category.small }}</div>
-      </div>
-      <v-btn class="cardBtn" min-width="80" min-height="40" style="padding: 0" color="var(--color-red)" @click="addfavorite">
-        <v-icon size="22" color="white" class="justify-content-center; Btn1Icon">mdi-heart</v-icon>
-        <div class="heartNum">收藏</div>
-      </v-btn>
-      <div class="main d-flex">
-        <div>
+      <v-icon size="22" color="white" width="50" max-hight="50" class="Btn2Icon" icon @click="addfavorite">mdi-heart</v-icon>
+      <div class="main d-lg-flex">
+        <div class="xsmain">
           <div class="mt-2 mb-6 d-flex">
-            <div class="ms-3 me-12 textleft"><span class="main-title" style="font-weight: bold">- 使用技術</span></div>
+            <div class="ms-3 me-lg-12 textleft"><span class="main-title" style="font-weight: bold">- 使用技術</span></div>
             <div class="textright row mb-5 pb-5" style="border-bottom: 1px solid rgba(205, 198, 188, 0.3)">
-              <span class="fw-300 col-3" v-for="(item, index) in technology" :key="'A' + index">{{ item }}</span>
+              <span class="fw-300 col-lg-3" v-for="(item, index) in technology" :key="'A' + index">{{ item }}</span>
             </div>
           </div>
           <div class="mt-2 mb-6 d-flex">
-            <div class="ms-3 me-12 textleft"><span class="main-title" style="font-weight: bold">- 作品尺寸</span></div>
-            <div class="textright">
+            <div class="ms-3 me-lg-12 textleft"><span class="main-title" style="font-weight: bold">- 作品尺寸</span></div>
+            <div class="textright col-xs-8">
               <span class="fw-300">{{ size }} {{ sunit }}</span>
             </div>
           </div>
           <div class="mt-2 mb-6 d-flex">
-            <div class="ms-3 me-12 textleft"><span class="main-title" style="font-weight: bold">- 製作天數</span></div>
-            <div class="textright">
+            <div class="ms-3 me-lg-12 textleft"><span class="main-title" style="font-weight: bold">- 製作天數</span></div>
+            <div class="textright col-xs-8">
               <span class="fw-300">{{ workingday + ` 天` }}</span>
             </div>
           </div>
           <div class="mt-2 mb-6 d-flex">
-            <div class="ms-3 me-12 textleft"><span class="main-title" style="font-weight: bold">- 預估價格</span></div>
-            <div class="textright">
+            <div class="ms-3 me-lg-12 textleft"><span class="main-title" style="font-weight: bold">- 預估價格</span></div>
+            <div class="textright col-xs-8">
               <span class="fw-300">{{ price + ` 元` }}</span>
             </div>
           </div>
           <div class="mt-2 mb-6 d-flex">
-            <div class="ms-3 me-12 textleft"><span class="main-title" style="font-weight: bold">- 作品說明</span></div>
-            <div class="textright fw-300">
+            <div class="ms-3 me-lg-12 textleft"><span class="main-title" style="font-weight: bold">- 作品說明</span></div>
+            <div class="textright fw-300 col-xs-8">
               {{ description }}
             </div>
           </div>

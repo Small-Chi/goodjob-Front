@@ -3,7 +3,7 @@
     <div class="content">
       <template>
         <div style="width: 100%">
-          <v-text-field label="搜尋人名" hide-details="auto" class="mb-10"></v-text-field>
+          <v-text-field label="搜尋人名" hide-details="auto" class="mb-10 mt-6 mt-lg-0"></v-text-field>
           <v-simple-table>
             <template>
               <thead>
