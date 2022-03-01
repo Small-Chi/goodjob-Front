@@ -12,7 +12,7 @@
           <v-text-field @keydown.enter="filterItemsS()"></v-text-field>
         </div>
       </div>
-      <div class="col-lg-4" v-if="me">
+      <div class="col-sm-6 col-lg-4" v-if="me">
         <div class="cardLine">
           <!-- 新增卡片按鈕 -->
           <v-btn depressed icon class="addcard" height="100" width="100">
@@ -21,7 +21,7 @@
         </div>
       </div>
       <!-- 要長出卡片的迴圈 -->
-      <div class="col-lg-4" v-for="(item, index) in filterItems" :key="index">
+      <div class="col-sm-6 col-lg-4" v-for="(item, index) in filterItems" :key="index">
         <div>
           <!-- 卡片呈現 -->
           <v-card class="card mx-auto card-item" max-width="350" color="var(--color-lightblue)">

@@ -15,7 +15,7 @@
       </v-card>
 
       <div class="row">
-        <v-card class="adminAdd col col-xl-3 mx-9 mx-xl-5 ms-md-2 me-md-2 my-5">
+        <v-card class="adminAdd col col-sm-5 col-xl-3 mx-9 mx-xl-5 ms-md-2 me-md-2 my-5">
           <v-btn depressed icon class="addBtn" height="60" width="60" @click.stop="dialog = true">
             <v-icon size="35" class="addpuls" @click="dialog = true">mdi-plus</v-icon>
           </v-btn>

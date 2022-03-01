@@ -11,7 +11,7 @@
 }
 
 @mixin md {
-  @media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) {
+  @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-lg) {
     @content;
   }
 }

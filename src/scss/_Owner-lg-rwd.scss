@@ -11,7 +11,7 @@
 }
 
 @mixin md {
-  @media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) {
+  @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-lg) {
     @content;
   }
 }
@@ -500,6 +500,311 @@
       .editBtn {
         width: 50px !important;
         height: 50px !important;
+      }
+
+      .editBtn:hover .editIcon {
+        color: var(--color-lightY) !important;
+      }
+    }
+  }
+}
+
+@include sm {
+  #ownerPage {
+    .Usersolgon {
+      border: 1px solid var(--color-white);
+      width: 85px;
+      height: 30px;
+      position: relative;
+      top: 7px;
+    }
+
+    .pullBtn {
+      width: 100px;
+      height: 17px !important;
+      background: var(--color-blue);
+      border-radius: 0px 0 10px 10px;
+      position: absolute;
+      top: 50px;
+      left: 10px;
+      z-index: 5;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      filter: drop-shadow(0px 5px 3px rgba(0, 0, 0, 0.3));
+    }
+
+    .xsMenuIcon {
+      font-size: 20px;
+      margin-top: 4px;
+      position: relative;
+      top: 0px;
+      cursor: pointer;
+    }
+
+    .xsMenuIcon:hover {
+      color: var(--color-lightY) !important;
+      // border: 1px solid var(--color-lightY) !important;
+    }
+
+    .avatarSidebar {
+      position: relative;
+      top: 150px;
+      left: 90px;
+      width: 60px !important;
+      height: 60px !important;
+    }
+
+    .sidebar {
+      width: 420px;
+      height: 250px;
+      top: -100%;
+      filter: drop-shadow(0px 5px 3px rgb(0, 0, 0));
+      background: var(--color-blue) !important;
+      position: fixed;
+      z-index: 1;
+    }
+
+    input[type='checkbox'] {
+      display: none;
+    }
+
+    input[type='checkbox']:checked + #OwnerPageSIderbar {
+      top: 0;
+      opacity: 1;
+    }
+
+    .avatarSidebar {
+      position: relative;
+      top: 90px;
+      left: 30px;
+      width: 100px !important;
+      height: 100px !important;
+    }
+    .selfmeanu {
+      width: 300px;
+      // height: 150px;
+      position: absolute;
+      top: 70px;
+      left: 140px;
+
+      .selfmeanuUl {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .memBtn {
+        width: 110px;
+        height: 35px;
+        margin-bottom: 5px;
+        margin-left: 10px;
+        .ctext2 {
+          font-size: 1rem;
+        }
+      }
+
+      .memBtn:hover .memIcon {
+        color: var(--color-lightY) !important;
+      }
+      .memBtn:hover a {
+        color: var(--color-lightY) !important;
+      }
+      .mg {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+    }
+    .selfmeanu2 {
+      display: none;
+    }
+    .selfmeanu3 {
+      width: 360px;
+      background: var(--color-deepblue);
+      // border: 1px solid red;
+      position: absolute;
+      top: 120px;
+      left: 30px;
+      display: flex;
+      align-items: flex-start;
+      z-index: -1;
+      .meanutitle {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+      }
+      .name {
+        border-bottom: 1px solid var(--color-lightY);
+        text-align: center;
+        padding-bottom: 2px;
+        margin-right: 0px;
+        margin-top: 85px;
+        margin-left: 10px;
+        // background-color: red;
+        width: 80px;
+      }
+
+      .score {
+        // background: red;
+        margin-left: 30px;
+        .itemIcon {
+          position: relative;
+          top: -2px;
+          font-size: 16px;
+        }
+        .num {
+          text-align: right;
+          font-weight: 300;
+          margin-left: -15px;
+          color: var(--color-lightY);
+          // background: red;
+        }
+      }
+
+      .nameh2 {
+        font-size: 18px;
+        font-weight: 700;
+      }
+      .meanu {
+        width: 180px;
+        // margin-left: 15px;
+        font-size: 18px;
+        color: var(--color-white);
+        // background: red;
+
+        .pricetitle {
+          text-align: center;
+          font-weight: 700;
+          margin-top: -14px;
+          margin-bottom: -8px;
+        }
+        .priceMenu {
+          // background: red;
+          height: 80px;
+          font-size: 16px;
+          overflow-y: auto;
+          overflow-x: hidden;
+        }
+      }
+    }
+  }
+
+  // Ownerself-------------------------
+  #ownerself {
+    background-color: var(--color-deepblue);
+    // border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 100%;
+    height: 95vh;
+    // margin-left: 450px;
+    margin-top: -95vh;
+    padding: 12%;
+    overflow-y: auto;
+    display: flex;
+    justify-content: start;
+    color: var(--color-white);
+    position: relative;
+    .ownername {
+      height: 100px;
+      font-size: 25px;
+      font-weight: 600;
+      // border: 1px solid white;
+      margin-right: 10px;
+      position: relative;
+      margin-top: 15px;
+      color: var(--color-lightY);
+    }
+    .ownername::after {
+      content: '';
+      width: 100%;
+      height: 40px;
+      border-bottom: 1px solid var(--color-lightY);
+      margin-right: 30px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .messageIcon {
+      color: var(--color-blue) !important;
+      background-color: var(--color-lightY);
+      position: relative;
+      margin-left: -5px;
+      margin-top: -10px;
+      margin-right: -5px;
+      width: 40px !important;
+      height: 40px !important;
+      box-shadow: (0px 5px 5px rgb(0, 0, 0));
+      transition: 0.3s;
+      .mesicon {
+        font-size: 25px;
+      }
+    }
+
+    .messageIcon:hover {
+      transform: translateY(-8px);
+      color: var(--color-lightY) !important;
+      background-color: var(--color-red);
+    }
+
+    .score {
+      // border: 1px solid white;
+      // width: 900px;
+      margin-top: 35px;
+      display: flex;
+      // flex-wrap: wrap;
+      padding-left: 0px;
+    }
+
+    .scoreIcon:hover {
+      color: var(--color-red) !important;
+    }
+
+    .scoreitem {
+      width: 40px;
+      // border: 1px solid wheat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      flex-wrap: wrap;
+      margin-left: 5px;
+    }
+    .num {
+      font-size: 25px;
+      color: var(--color-lightY);
+    }
+    .numtitle {
+      display: none;
+    }
+    .fw-300 {
+      font-weight: 300 !important;
+    }
+    .content {
+      // position: relative;
+      // top: 0;
+      // left: -400px;
+      // width: 100%;
+      // height: 150px;
+      // background-color: rgb(182, 119, 119);
+      .main {
+        // width: 100%;
+        // background-color: rgb(116, 50, 75);
+        // 內文字級
+        font-size: 16px;
+        .pricesdiv {
+          border: 1px solid var(--color-white);
+          margin-left: 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          margin-top: -3px;
+        }
+      }
+      .editBtn {
+        width: 45px !important;
+        height: 45px !important;
+        position: absolute;
+        top: 18px;
+        right: 18px;
       }
 
       .editBtn:hover .editIcon {

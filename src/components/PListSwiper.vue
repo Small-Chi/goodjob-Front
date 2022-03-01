@@ -2,12 +2,12 @@
   <div id="listswiper">
     <div class="name me-5">
       <router-link :to="`/user/${portfolio._id}/userself/`">
-        <v-avatar size="90" class="me-2 d-none d-lg-flex avatarSwipwer">
+        <v-avatar size="90" class="me-2 d-none d-sm-flex d-lg-flex mt-sm-5 mb-sm-n5 mt-md-0 mb-md-0 avatarSwipwer">
           <v-img :src="'https://source.boringavatars.com/beam/120/' + portfolio.account"></v-img>
         </v-avatar>
       </router-link>
       <router-link :to="`/user/${portfolio._id}/userself/`">
-        <v-avatar size="60" class="me-1 d-flex d-lg-none avatarSwipwer">
+        <v-avatar size="60" class="me-1 d-flex d-sm-none d-lg-none avatarSwipwer">
           <v-img :src="'https://source.boringavatars.com/beam/120/' + portfolio.account"></v-img>
         </v-avatar>
       </router-link>
@@ -114,9 +114,9 @@
             576: {
               slidesPerView: 1
             },
-            // 768: {
-            //   slidesPerView: 3
-            // },
+            768: {
+              slidesPerView: 2
+            },
             992: {
               slidesPerView: 3
             }

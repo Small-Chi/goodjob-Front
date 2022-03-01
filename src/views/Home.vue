@@ -2,7 +2,8 @@
   <v-app id="home">
     <v-card class="overflow-hidden">
       <v-app-bar absolute hide-on-scroll prominent scroll-target="#scrolling-techniques-4" max-height="70" class="textWhite NAVbar" style="z-index: 5">
-        <v-img class="logo1 me-xl-n2 ms-xl-8" max-width="115" src="../assets/images/logo.png"></v-img>
+        <v-img class="logo1 me-xl-n2 ms-xl-8 d-flex d-sm-none d-md-flex d-xl-flex" max-width="115" src="../assets/images/logo.png"></v-img>
+        <v-img class="me-xl-n2 ms-xl-8 me-sm-n2 d-sm-flex d-none d-md-none d-xl-none" max-width="105" src="../assets/images/logo.png"></v-img>
         <div class="solgon rounded-pill ms-n5">
           <div class="ctext1 me-7 d-flex justify-end align-center" style="height: 100%">接案 ､ 發包 , 超好用</div>
         </div>
@@ -420,7 +421,7 @@
                 打造
                 <br />
               </h1>
-              <h1 class="centerslogan3 textWhite" v-animate-css="'fadeInUp'">
+              <h1 class="centerslogan3 textlightY" v-animate-css="'fadeInUp'">
                 立即體驗
                 <br />
               </h1>

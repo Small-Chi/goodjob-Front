@@ -434,7 +434,7 @@
                 <v-btn rounded class="Listbtn d-none d-lg-flex" @click="filter = '網頁設計'">網頁設計</v-btn>
                 <v-btn rounded class="Listbtn d-none d-lg-flex" @click="filter = '室內設計'">室內設計</v-btn>
                 <v-btn rounded class="Listbtn d-none d-lg-flex" @click="filter = '手作設計'">手作設計</v-btn>
-                <v-btn rounded class="Listbtn d-flex d-lg-none mt-3 mt-lg-5" @click="filter = ''">全部</v-btn>
+                <v-btn rounded class="Listbtn d-flex d-lg-none mt-3 mt-lg-5 mt-sm-0" @click="filter = ''">全部</v-btn>
                 <v-btn rounded class="Listbtn d-flex d-lg-none" @click="filter = '平面設計'">平面</v-btn>
                 <v-btn rounded class="Listbtn d-flex d-lg-none" @click="filter = '網頁設計'">網頁</v-btn>
                 <v-btn rounded class="Listbtn d-flex d-lg-none" @click="filter = '室內設計'">室內</v-btn>

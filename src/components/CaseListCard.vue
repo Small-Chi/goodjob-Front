@@ -8,7 +8,7 @@
             <v-icon size="18" color="white" class="justify-content-center; Btn1Icon">mdi-heart</v-icon>
             <div class="heartNum">{{ casedata.favorite }}</div>
           </v-btn>
-          <div class="col-10">
+          <div class="col-10 col-sm-12">
             <v-card-title class="ctext1 mb-n5 mb-lg-1" style="margin-left: 10px; padding-top: 5px">
               <h3 class="textWhite ms-n1">{{ `◔` }}</h3>
               <h3 class="textlightY ms-2">{{ new Date(casedata.endingday).toLocaleDateString().replace(/\//g, '-') }}</h3>
@@ -56,7 +56,7 @@
 
       <!-- <div class="swiper-pagination" slot="pagination" style="margin-top: 50px"></div> -->
       <div class="swiper-button-next d-none d-xl-flex" slot="button-next"></div>
-      <div class="swiper-button-next d-none d-xl-flex" slot="button-prev"></div>
+      <div class="swiper-button-prev d-none d-xl-flex" slot="button-prev"></div>
     </swiper>
     <div class="ms-1 me-2 catdBottom">
       <router-link :to="`/owner/${casedata._id}/ownerself/`">
