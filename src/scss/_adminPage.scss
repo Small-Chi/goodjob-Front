@@ -1,17 +1,23 @@
+@mixin xs {
+  @media (max-width: $breakpoint-xs) {
+    @content;
+  }
+}
+
 @mixin sm {
-  @media (main-width: $breakpoint-sm) {
+  @media (min-width: $breakpoint-xs) and (max-width: $breakpoint-sm) {
     @content;
   }
 }
 
 @mixin md {
-  @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) {
+  @media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) {
     @content;
   }
 }
 
 @mixin lg {
-  @media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) {
+  @media (min-width: $breakpoint-lg) {
     @content;
   }
 }
@@ -587,14 +593,6 @@
     }
   }
 
-  .avatarSidebar {
-    position: relative;
-    top: 150px;
-    left: 90px;
-    width: 130px !important;
-    height: 130px !important;
-  }
-
   .adavatars {
     height: 30px;
     position: relative;
@@ -661,10 +659,12 @@
       background: var(--color-white);
       margin-left: 295px;
     }
-    .avatarSidebar-md {
+    .avatarSidebar {
       position: relative;
-      top: 120px;
+      top: 150px;
       left: 90px;
+      width: 130px !important;
+      height: 130px !important;
     }
 
     .adlisttextB {
