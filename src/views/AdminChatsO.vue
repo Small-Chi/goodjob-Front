@@ -2,13 +2,11 @@
   <div id="adminChats">
     <div class="content">
       <div class="ChatBtn me-lg-n16">
-        <v-btn class="mb-lg-2 pe-7" rounded color="var(--color-blue)" style="color: var(--color-deepwhite)" :to="`/admin/adminChats`">
+        <v-btn class="mb-lg-2 pe-md-12 pe-xl-9" rounded color="var(--color-blue)" style="color: var(--color-deepwhite)" :to="`/admin/adminChats`">
           <v-icon class="me-1">mdi-account-outline</v-icon>
-          會員
         </v-btn>
-        <v-btn rounded class="pe-7" color="var(--color-blue)" style="color: var(--color-deepwhite)" :to="`/admin/adminChatsO`">
+        <v-btn rounded class="pe-md-12 pe-xl-9" color="var(--color-blue)" style="color: var(--color-deepwhite)" :to="`/admin/adminChatsO`">
           <v-icon class="me-1">mdi-account-tie-outline</v-icon>
-          業主
         </v-btn>
       </div>
       <div class="chatlist">

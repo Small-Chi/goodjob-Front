@@ -1,3 +1,21 @@
+@mixin sm {
+  @media (main-width: $breakpoint-sm) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) {
+    @content;
+  }
+}
+
 @include lg {
   // nav-------------------------
   .adminList {
@@ -100,15 +118,18 @@
       position: fixed;
     }
     .content {
-      width: 75%;
+      width: 79%;
       height: 100vh;
       background: var(--color-white);
       margin-left: 400px;
     }
+
     .avatarSidebar {
       position: relative;
-      top: 100px;
+      top: 125px;
       left: 110px;
+      width: 180px !important;
+      height: 180px !important;
     }
 
     .adlisttextB {
@@ -120,7 +141,7 @@
       height: 500px;
       // border: 1px solid red;
       position: absolute;
-      top: 300px;
+      top: 325px;
       left: 100px;
 
       .memBtn {
@@ -521,6 +542,543 @@
   }
 }
 
+@include md {
+  // nav-------------------------
+  .adminList {
+    position: absolute;
+    padding: 15px;
+    top: 35px;
+    right: -50px;
+    background-color: var(--color-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    filter: drop-shadow(0px 5px 3px rgb(0, 0, 0));
+
+    .adlisttext {
+      color: var(--color-blue) !important;
+    }
+
+    .memBtn:hover .memIcon {
+      color: var(--color-red) !important;
+    }
+    .memBtn:hover a {
+      color: var(--color-red) !important;
+    }
+    .mg {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+
+  .navAD {
+    position: relative;
+    top: 20px;
+    color: var(--color-blue) !important;
+    border-right: 2px solid var(--color-blue);
+    a {
+      color: var(--color-blue) !important;
+      font-weight: 700;
+    }
+
+    a:hover {
+      color: var(--color-red) !important;
+    }
+  }
+
+  .avatarSidebar {
+    position: relative;
+    top: 150px;
+    left: 90px;
+    width: 130px !important;
+    height: 130px !important;
+  }
+
+  .adavatars {
+    height: 30px;
+    position: relative;
+    top: 11px;
+    cursor: pointer;
+  }
+
+  .adavatars:hover .down {
+    color: var(--color-red) !important;
+  }
+
+  // 登入紐
+  .adlogin {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 14px;
+  }
+
+  .adlogin:hover {
+    color: var(--color-red) !important;
+  }
+
+  #owner:hover .adminList {
+    display: block;
+    animation: divAnimation 0.3s linear forwards;
+  }
+
+  #owner {
+    padding-bottom: 50px;
+  }
+
+  @keyframes divAnimation {
+    100% {
+      transform: translateY(10px);
+    }
+  }
+
+  // AdminHome---------------------------------------------
+  #AdminHome {
+    .NAVbar {
+      background-color: var(--color-white) !important;
+    }
+    .Usersolgon {
+      background-color: var(--color-blue);
+      width: 135px;
+      height: 36px;
+      position: relative;
+      top: 13px;
+      left: -40px;
+      z-index: -1;
+      padding-right: 20px;
+    }
+
+    .sidebar {
+      width: 300px;
+      height: 100vh;
+      filter: drop-shadow(0px 5px 3px rgb(0, 0, 0));
+      background: var(--color-deepwhite);
+      position: fixed;
+    }
+    .content {
+      width: 75%;
+      height: 100vh;
+      background: var(--color-white);
+      margin-left: 295px;
+    }
+    .avatarSidebar-md {
+      position: relative;
+      top: 120px;
+      left: 90px;
+    }
+
+    .adlisttextB {
+      color: var(--color-blue) !important;
+      font-weight: 700;
+    }
+    .selfmeanu {
+      width: 200px;
+      height: 500px;
+      // border: 1px solid red;
+      position: absolute;
+      top: 300px;
+      left: 50px;
+
+      .memBtn {
+        width: 100%;
+        height: 45px;
+      }
+
+      .memBtn:hover .memIcon {
+        color: var(--color-red) !important;
+      }
+      .memBtn:hover a {
+        color: var(--color-red) !important;
+      }
+      .mg {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  // AdminUser----------------------------------------
+  #adminuser {
+    // 主要內容的區域
+    background-color: var(--color-white);
+    // border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 70%;
+    height: 95vh;
+    margin-left: 310px;
+    margin-top: -95vh;
+    padding-top: 3%;
+    padding-left: 2%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    // display: flex;
+    justify-content: start;
+    color: var(--color-white);
+
+    a {
+      color: var(--color-blue) !important;
+    }
+
+    .content {
+      position: relative;
+      width: 100%;
+      height: 80vh !important;
+      top: 0;
+      left: -285px;
+      height: 150px;
+      display: flex;
+
+      // 表標
+      .v-data-table > .v-data-table__wrapper > table > tbody > tr > th,
+      .v-data-table > .v-data-table__wrapper > table > thead > tr > th,
+      .v-data-table > .v-data-table__wrapper > table > tfoot > tr > th {
+        font-size: 1.2rem;
+        color: var(--color-blue);
+        font-weight: 700;
+        background: var(--color-white);
+        border-bottom: 1px solid var(--color-blue);
+      }
+
+      .mdi-menu-down::before {
+        color: var(--color-ddeepY);
+      }
+
+      .mdi-close::before {
+        color: var(--color-ddeepY);
+      }
+
+      // .theme--light.v-input {
+      //   color: var(--color-white);
+      // }
+
+      .theme--light.v-messages {
+        color: var(--color-ddeepY) !important;
+      }
+
+      .v-select__selections {
+        color: var(--color-ddeepY) !important;
+      }
+
+      .theme--light.v-label {
+        color: var(--color-ddeepY);
+      }
+
+      .theme--light.v-text-field > .v-input__control > .v-input__slot:before {
+        border: 1px solid var(--color-ddeepY) !important;
+      }
+
+      .v-text-field fieldset,
+      .v-text-field .v-input__control {
+        color: var(--color-ddeepY);
+      }
+
+      // input字級
+      .theme--light.v-input input,
+      .theme--light.v-input textarea {
+        color: var(--color-blue);
+        font-size: 25px;
+        margin-bottom: 10px;
+        text-align: center;
+        font-weight: 700;
+      }
+
+      .v-application .primary--text {
+        color: var(--color-blue);
+        caret-color: var(--color-blue);
+      }
+
+      // 表內文色
+      .theme--light.v-data-table {
+        color: var(--color-blue);
+        background: var(--color-white);
+      }
+
+      // 表高度
+      .v-data-table > .v-data-table__wrapper > table > tbody > tr > td,
+      .v-data-table > .v-data-table__wrapper > table > thead > tr > td,
+      .v-data-table > .v-data-table__wrapper > table > tfoot > tr > td {
+        height: 80px;
+      }
+
+      // 表內文字級
+      .v-data-table > .v-data-table__wrapper > table > tbody > tr > td,
+      .v-data-table > .v-data-table__wrapper > table > thead > tr > td,
+      .v-data-table > .v-data-table__wrapper > table > tfoot > tr > td {
+        font-size: 1rem;
+      }
+
+      .favIcon:hover {
+        color: var(--color-ddeepY) !important;
+      }
+
+      .favIconD:hover {
+        color: var(--color-red) !important;
+      }
+    }
+    tbody {
+      tr:hover {
+        background-color: var(--color-deepwhite) !important;
+      }
+    }
+  }
+
+  // adminChats----------------------------------------------
+  #adminChats {
+    background-color: var(--color-wihte);
+    // border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 76.5%;
+    height: 95vh;
+    margin-left: 295px;
+    margin-top: -95vh;
+    padding-top: 3%;
+    padding-left: 2%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    // display: flex;
+    justify-content: start;
+    color: var(--color-white);
+
+    .content {
+      position: relative;
+      width: 85%;
+      height: 80vh !important;
+      top: 0;
+      left: -250px;
+      height: 150px;
+      display: flex;
+      // background-color: rgb(182, 119, 119);
+      .chatlist {
+        width: 300px;
+        // background-color: red;
+        height: 100%;
+        margin-right: 30px;
+        .theme--light.v-subheader {
+          color: var(--color-blue);
+          font-size: 20px;
+          border-bottom: 1px solid var(--color-blue);
+          margin-bottom: 15px;
+          font-size: 700;
+        }
+        .theme--light.v-list-item:not(.v-list-item--active):not(.v-list-item--disabled) {
+          color: var(--color-blue);
+        }
+      }
+      .main {
+        width: 100%;
+        // background-color: green;
+        height: 100%;
+      }
+      .text {
+        // background-color: red;
+        text-align: center;
+        font-size: 1.5rem;
+        color: var(--color-blue) !important;
+        font-weight: 700;
+      }
+    }
+    .theme--light.v-input input,
+    .theme--light.v-input textarea {
+      color: var(--color-deepblue) !important;
+      font-size: 25px;
+      margin-bottom: 10px;
+      text-align: left;
+    }
+    .v-text-field fieldset,
+    .v-text-field .v-input__control {
+      color: var(--color-ddeepY);
+    }
+
+    .chatup {
+      height: 600px;
+      overflow-y: scroll;
+      margin: 0;
+      background: var(--color-deepwhite);
+      font-size: 1rem;
+      .membermes {
+        background: var(--color-blue);
+        color: white;
+        border-radius: 15px;
+        padding: 10px;
+      }
+
+      .Me {
+        background: white;
+        border-radius: 15px;
+        padding: 10px;
+      }
+
+      .Me-oneline {
+        background: white;
+        border-radius: 15px;
+        padding: 10px;
+      }
+    }
+
+    .chatin {
+      background: var(--color-white);
+      position: relative;
+    }
+    .mesbtn {
+      margin-bottom: 25px;
+      margin-right: 20px;
+    }
+  }
+
+  // adminwork----------------------------------------------
+  #adminwork {
+    // 主要內容的區域
+    background-color: var(--color-wihte);
+    // border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 76.5%;
+    height: 95vh;
+    margin-left: 390px;
+    margin-top: -95vh;
+    padding-top: 3%;
+    padding-left: 2%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    // display: flex;
+    color: var(--color-blue);
+
+    .worktitle {
+      height: 50px;
+      width: 100%;
+      font-size: 30px;
+      font-weight: 600;
+      // border: 1px solid white;
+      position: relative;
+      color: var(--color-blue);
+      text-align: center;
+    }
+    .worktitle::after {
+      content: '';
+      width: 100%;
+      height: 48px;
+      border-bottom: 1px solid var(--color-blue);
+      position: absolute;
+      top: 0;
+      left: 0;
+      text-align: center;
+    }
+
+    .seiperCard {
+      width: 80%;
+      border-radius: 10px;
+    }
+
+    .smalltitle {
+      margin-bottom: 30px;
+      font-size: 1.2rem;
+      color: var(--color-red);
+      font-weight: 700;
+    }
+
+    .adminswiper {
+      // background-color: green;
+      width: 76.5%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .swcontent {
+      margin-top: -10px;
+      width: 100%;
+      display: flex;
+    }
+
+    .sideItem {
+      width: 100%;
+      height: 100%;
+      display: flex;
+    }
+
+    .swiper-button-prev:after,
+    .swiper-container-rtl .swiper-button-next:after {
+      position: absolute;
+      top: 0;
+      left: 0px;
+    }
+
+    .row {
+      margin-top: 30px;
+      width: 84%;
+      margin-left: 0px;
+      margin-right: 0px;
+      justify-content: start;
+      padding: 0;
+
+      // background: red;
+    }
+
+    .card {
+      // background: red;
+      padding: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      flex-direction: row;
+      text-align: left;
+    }
+
+    .item {
+      margin-top: 10px;
+    }
+
+    .imgcol {
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .imgcontent {
+      width: 100%;
+    }
+
+    .adminAdd {
+      background: rgba(0, 0, 0, 0);
+      height: 190px;
+      border: 3px dashed var(--color-blue);
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px !important;
+    }
+
+    .adminAdd:hover {
+      border: 3px dashed var(--color-red);
+      transition: 0.5s;
+    }
+
+    .addBtn {
+      background: rgba(0, 0, 0, 0);
+      border: 3px dashed var(--color-blue);
+    }
+
+    .adminAdd:hover .addBtn {
+      transform: scale(1.1);
+      color: var(--color-red) !important;
+      border: 3px dashed var(--color-red);
+    }
+
+    .Imgform {
+      display: flex !important;
+      justify-content: center !important;
+    }
+
+    .cardBtn3 {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      z-index: 3;
+    }
+
+    .cardBtn3:hover .Btn3Icon {
+      color: var(--color-lightY) !important;
+    }
+  }
+}
+
 @include xs {
   // nav-------------------------
   .Usersolgon {
@@ -570,6 +1128,14 @@
     a:hover {
       color: var(--color-red) !important;
     }
+  }
+
+  .avatarSidebar {
+    position: relative;
+    top: 150px;
+    left: 90px;
+    width: 60px !important;
+    height: 60px !important;
   }
 
   .adavatars {
@@ -972,11 +1538,8 @@
     }
 
     .sideItem {
-      width: 100%;
+      width: 120%;
       margin-top: -50px !important;
-      padding-top: 0px !important;
-
-      // display: flex;
     }
 
     .swiper-button-prev:after,

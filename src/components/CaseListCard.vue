@@ -55,8 +55,8 @@
       </swiper-slide>
 
       <!-- <div class="swiper-pagination" slot="pagination" style="margin-top: 50px"></div> -->
-      <div class="swiper-button-next d-none d-lg-flex" slot="button-next"></div>
-      <div class="swiper-button-prev d-none d-lg-flex" slot="button-prev"></div>
+      <div class="swiper-button-next d-none d-xl-flex" slot="button-next"></div>
+      <div class="swiper-button-next d-none d-xl-flex" slot="button-prev"></div>
     </swiper>
     <div class="ms-1 me-2 catdBottom">
       <router-link :to="`/owner/${casedata._id}/ownerself/`">

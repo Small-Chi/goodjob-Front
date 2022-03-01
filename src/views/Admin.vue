@@ -58,28 +58,40 @@
           </v-avatar>
           <v-icon class="textBlue down">mdi-chevron-down</v-icon>
         </div>
-        <v-btn color="rgba(0,0,0,0)" class="textBlue adlogin ms-n6 d-none d-md-flex" plain v-if="user.isuserLogin && !owner.isownerLogin" @click="userlogout">
+        <v-btn
+          color="rgba(0,0,0,0)"
+          class="textBlue adlogin ms-0 ms-xl-n6 d-none d-md-flex"
+          plain
+          v-if="user.isuserLogin && !owner.isownerLogin"
+          @click="userlogout"
+        >
           <v-icon class="me-2">mdi-logout-variant</v-icon>
           <!-- 登出 -->
         </v-btn>
-        <v-btn color="rgba(0,0,0,0)" class="textBlue adlogin ms-n6 d-none d-md-flex" plain v-if="!user.isuserLogin && owner.isownerLogin" @click="ownerlogout">
+        <v-btn
+          color="rgba(0,0,0,0)"
+          class="textBlue adlogin ms-0 ms-xl-n6 d-none d-md-flex"
+          plain
+          v-if="!user.isuserLogin && owner.isownerLogin"
+          @click="ownerlogout"
+        >
           <v-icon class="me-2">mdi-logout-variant</v-icon>
           <!-- 登出 -->
         </v-btn>
 
         <!-- xs Admin sidebar --------------------------------------------------------------->
         <router-link to="/">
-          <v-icon class="textBlue xsMenuBtnAD ms-n3 d-sm-flex d-xl-none me-5" v-if="user.isAdmin">mdi-home</v-icon>
+          <v-icon class="textBlue xsMenuBtnAD ms-n3 d-sm-flex d-md-none d-xl-none me-5" v-if="user.isAdmin">mdi-home</v-icon>
         </router-link>
         <label for="checkloginA">
-          <v-icon class="textBlue xsMenuBtnAD ms-n2 d-sm-flex d-xl-none me-n1" v-if="user.isAdmin">mdi-dots-horizontal</v-icon>
+          <v-icon class="textBlue xsMenuBtnAD ms-n2 d-sm-flex d-md-none d-xl-none me-n1" v-if="user.isAdmin">mdi-dots-horizontal</v-icon>
         </label>
         <input id="checkloginA" type="checkbox" />
         <div id="adminsidebar" v-if="user.isAdmin">
           <label for="checkloginA">
-            <v-icon size="30" color="var(--color-blue)" class="d-xl-none d-xs-flex mt-2 ms-2 closeXO">mdi-close</v-icon>
+            <v-icon size="30" color="var(--color-blue)" class="d-md-none d-xl-none d-xs-flex mt-2 ms-2 closeXO">mdi-close</v-icon>
           </label>
-          <div class="sidebarAva d-xl-none">
+          <div class="sidebarAva d-md-none d-xl-none">
             <v-avatar size="90" class="me-2 mb-6">
               <v-img :src="'https://source.boringavatars.com/beam/120/' + user.account + `17`"></v-img>
             </v-avatar>
@@ -135,9 +147,12 @@
         <v-container fluid style="background-color: var(--color-deepwhite); padding: 0px; height: 100vh">
           <!-- 內容 -->
           <div class="sidebar">
-            <v-avatar size="180" class="avatarSidebar">
+            <v-avatar class="avatarSidebar">
               <v-img :src="'https://source.boringavatars.com/beam/120/' + user.account + `17`"></v-img>
             </v-avatar>
+            <!-- <v-avatar size="130" class="avatarSidebar-md d-none d-md-flex d-xl-none">
+              <v-img :src="'https://source.boringavatars.com/beam/120/' + user.account + `17`"></v-img>
+            </v-avatar> -->
           </div>
           <div class="content"></div>
           <div class="selfmeanu">

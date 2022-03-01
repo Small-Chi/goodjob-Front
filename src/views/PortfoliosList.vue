@@ -4,7 +4,7 @@
     <v-card class="overflow-hidden">
       <v-app-bar absolute hide-on-scroll prominent scroll-target="#scrolling-techniques-4" max-height="70" class="textWhite NAVbar" style="z-index: 5">
         <v-img class="logo1 me-xl-n2 ms-xl-8 d-none d-lg-flex" max-width="115" src="../assets/images/logo.png"></v-img>
-        <div class="Usersolgon rounded-pill ms-xl-n5">
+        <div class="Usersolgon rounded-pill ms-xl-n5 ms-md-n14">
           <div class="ctext1 me-xl-7 d-flex justify-center justify-lg-end align-center" style="height: 100%">找專業</div>
         </div>
         <v-spacer></v-spacer>
@@ -175,28 +175,40 @@
           </v-avatar>
           <v-icon class="textWhite down">mdi-chevron-down</v-icon>
         </div>
-        <v-btn color="rgba(0,0,0,0)" class="textWhite login ms-n6 d-none d-md-flex" plain v-if="user.isuserLogin && !owner.isownerLogin" @click="userlogout">
+        <v-btn
+          color="rgba(0,0,0,0)"
+          class="textWhite login ms-0 ms-xl-n6 d-none d-md-flex"
+          plain
+          v-if="user.isuserLogin && !owner.isownerLogin"
+          @click="userlogout"
+        >
           <v-icon class="me-2">mdi-logout-variant</v-icon>
           <!-- 登出 -->
         </v-btn>
-        <v-btn color="rgba(0,0,0,0)" class="textWhite login ms-n6 d-none d-md-flex" plain v-if="!user.isuserLogin && owner.isownerLogin" @click="ownerlogout">
+        <v-btn
+          color="rgba(0,0,0,0)"
+          class="textWhite login ms-0 ms-xl-n6 d-none d-md-flex"
+          plain
+          v-if="!user.isuserLogin && owner.isownerLogin"
+          @click="ownerlogout"
+        >
           <v-icon class="me-2">mdi-logout-variant</v-icon>
           <!-- 登出 -->
         </v-btn>
 
         <!-- xs User sidebar --------------------------------------------------------------->
         <router-link to="/">
-          <v-icon class="textWhite xsMenuBtn ms-n3 d-sm-flex d-xl-none me-5" v-if="user.isuserLogin && !user.isAdmin">mdi-home</v-icon>
+          <v-icon class="textWhite xsMenuBtn ms-n3 d-sm-flex d-md-none d-xl-none me-5" v-if="user.isuserLogin && !user.isAdmin">mdi-home</v-icon>
         </router-link>
         <label for="checklogin">
-          <v-icon class="textWhite xsMenuBtn ms-n2 d-sm-flex d-xl-none me-n1" v-if="user.isuserLogin && !user.isAdmin">mdi-dots-horizontal</v-icon>
+          <v-icon class="textWhite xsMenuBtn ms-n2 d-sm-flex d-md-none d-xl-none me-n1" v-if="user.isuserLogin && !user.isAdmin">mdi-dots-horizontal</v-icon>
         </label>
         <input id="checklogin" type="checkbox" />
         <div id="usersidebar" v-if="user.isuserLogin && !user.isAdmin">
           <label for="checklogin">
-            <v-icon size="30" color="var(--color-white)" class="d-xl-none d-xs-flex mt-2 ms-2 closeX">mdi-close</v-icon>
+            <v-icon size="30" color="var(--color-white)" class="d-md-none d-xl-none d-xs-flex mt-2 ms-2 closeX">mdi-close</v-icon>
           </label>
-          <div class="sidebarAva d-xl-none">
+          <div class="sidebarAva d-md-none d-xl-none">
             <v-avatar size="90" class="me-2 mb-6">
               <v-img :src="'https://source.boringavatars.com/beam/120/' + user.account"></v-img>
             </v-avatar>
@@ -266,17 +278,17 @@
 
         <!-- xs Owner sidebar --------------------------------------------------------------->
         <router-link to="/">
-          <v-icon class="textWhite xsMenuBtn ms-n3 d-sm-flex d-xl-none me-5" v-if="owner.isownerLogin">mdi-home</v-icon>
+          <v-icon class="textWhite xsMenuBtn ms-n3 d-sm-flex d-md-none d-xl-none me-5" v-if="owner.isownerLogin">mdi-home</v-icon>
         </router-link>
         <label for="checkloginO">
-          <v-icon class="textWhite xsMenuBtn ms-n2 d-sm-flex d-xl-none me-n1" v-if="owner.isownerLogin">mdi-dots-horizontal</v-icon>
+          <v-icon class="textWhite xsMenuBtn ms-n2 d-sm-flex d-md-none d-xl-none me-n1" v-if="owner.isownerLogin">mdi-dots-horizontal</v-icon>
         </label>
         <input id="checkloginO" type="checkbox" />
         <div id="ownersidebar" v-if="owner.isownerLogin">
           <label for="checkloginO">
-            <v-icon size="30" color="var(--color-white)" class="d-xl-none d-xs-flex mt-2 ms-2 closeX">mdi-close</v-icon>
+            <v-icon size="30" color="var(--color-white)" class="d-md-none d-xl-none d-xs-flex mt-2 ms-2 closeX">mdi-close</v-icon>
           </label>
-          <div class="sidebarAva d-xl-none">
+          <div class="sidebarAva d-md-none d-xl-none">
             <v-avatar size="90" class="me-2 mb-6">
               <v-img :src="'https://source.boringavatars.com/beam/120/' + owner.account"></v-img>
             </v-avatar>
@@ -342,17 +354,17 @@
 
         <!-- xs Admin sidebar --------------------------------------------------------------->
         <router-link to="/">
-          <v-icon class="textWhite xsMenuBtn ms-n3 d-sm-flex d-xl-none me-5" v-if="user.isAdmin">mdi-home</v-icon>
+          <v-icon class="textWhite xsMenuBtn ms-n3 d-sm-flex d-md-none d-xl-none me-5" v-if="user.isAdmin">mdi-home</v-icon>
         </router-link>
         <label for="checkloginA">
-          <v-icon class="textWhite xsMenuBtn ms-n2 d-sm-flex d-xl-none me-n1" v-if="user.isAdmin">mdi-dots-horizontal</v-icon>
+          <v-icon class="textWhite xsMenuBtn ms-n2 d-sm-flex d-md-none d-xl-none me-n1" v-if="user.isAdmin">mdi-dots-horizontal</v-icon>
         </label>
         <input id="checkloginA" type="checkbox" />
         <div id="adminsidebar" v-if="user.isAdmin">
           <label for="checkloginA">
-            <v-icon size="30" color="var(--color-blue)" class="d-xl-none d-xs-flex mt-2 ms-2 closeXO">mdi-close</v-icon>
+            <v-icon size="30" color="var(--color-blue)" class="d-md-none d-xl-none d-xs-flex mt-2 ms-2 closeXO">mdi-close</v-icon>
           </label>
-          <div class="sidebarAva d-xl-none">
+          <div class="sidebarAva d-md-none d-xl-none">
             <v-avatar size="90" class="me-2 mb-6">
               <v-img :src="'https://source.boringavatars.com/beam/120/' + user.account + `17`"></v-img>
             </v-avatar>

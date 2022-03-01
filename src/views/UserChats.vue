@@ -5,7 +5,7 @@
       <div class="chatlist">
         <v-card rounded class="mx-auto" max-width="300" tile>
           <v-list rounded color="var(--color-deepblue)" class="list">
-            <v-subheader>用戶{{ ` — ` + user.username }}</v-subheader>
+            <v-subheader>發案者</v-subheader>
             <v-list-item-group v-model="selected" color="var(--color-lightY)">
               <v-list-item v-for="owner in owners" :key="owner.ownername" class="mb-3">
                 <v-avatar size="40" class="me-5">

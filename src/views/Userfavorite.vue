@@ -15,7 +15,7 @@
                   <th class="text-center">結案日期</th>
                   <th class="text-center">預算</th>
                   <th class="text-center">需求風格</th>
-                  <th class="text-center">訊息/狀態/移除</th>
+                  <th class="text-center">訊息 | 狀態 | 移除</th>
                 </tr>
               </thead>
               <tbody>
@@ -49,10 +49,10 @@
                   </td>
                   <td class="text-center">
                     <router-link :to="`/user/${user._id}/userchats/`">
-                      <v-icon color="var(--color-white)" class="me-lg-1 favIcon">mdi-message-outline</v-icon>
+                      <v-icon color="var(--color-white)" class="me-xl-1 favIcon">mdi-message-outline</v-icon>
                     </router-link>
                     <v-icon color="var(--color-white)" class="favIcon" @click="wantDo(index)">mdi-file-move-outline</v-icon>
-                    <v-icon color="var(--color-white)" class="favIconD ms-lg-5" @click="deletefav(index)">mdi-delete</v-icon>
+                    <v-icon color="var(--color-white)" class="favIconD ms-xl-5" @click="deletefav(index)">mdi-delete</v-icon>
                   </td>
                 </tr>
               </tbody>

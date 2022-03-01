@@ -6,7 +6,7 @@
       <v-card class="seiperCard">
         <swiper ref="mySwiper" :options="swiperOptions" class="swcontent">
           <swiper-slide v-for="(item, index) in pages" :key="index">
-            <img class="sideItem" :src="item.image" />
+            <img style="vertical-align: middle" class="sideItem" :src="item.image" />
           </swiper-slide>
           <div class="swiper-button-prev" slot="button-prev"></div>
           <div class="swiper-button-next" slot="button-next"></div>
@@ -15,12 +15,12 @@
       </v-card>
 
       <div class="row">
-        <v-card class="adminAdd col col-lg-3 mx-9 mx-lg-5 my-5">
+        <v-card class="adminAdd col col-xl-3 mx-9 mx-xl-5 ms-md-2 me-md-2 my-5">
           <v-btn depressed icon class="addBtn" height="60" width="60" @click.stop="dialog = true">
             <v-icon size="35" class="addpuls" @click="dialog = true">mdi-plus</v-icon>
           </v-btn>
         </v-card>
-        <div class="card col-lg-3 mx-lg-5 my-lg-5" v-for="(item, index) in pages" :key="index">
+        <div class="card col-md-6 col-xl-3 mx-xl-4 my-xl-5" v-for="(item, index) in pages" :key="index">
           <v-card class="imgcol" style="padding: 0">
             <v-btn icon class="cardBtn3" max-width="20" max-height="20" style="padding: 0; background-color: var(--color-red)" @click="deleteImg(item._id)">
               <v-icon size="10" color="white" class="justify-content-center; Btn3Icon">mdi-close</v-icon>

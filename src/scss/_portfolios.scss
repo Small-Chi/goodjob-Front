@@ -1,3 +1,21 @@
+@mixin sm {
+  @media (main-width: $breakpoint-sm) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: $breakpoint-lg) {
+    @content;
+  }
+}
+
 @include lg {
   .contentleft {
     background-color: var(--color-deepblue);
@@ -124,7 +142,7 @@
       border-radius: 5px;
       margin-top: 20px;
       margin-bottom: 20px;
-      margin-left: 40px;
+      margin-left: 28px;
       // margin-right: 10px;
       display: flex;
       justify-content: center;
@@ -196,6 +214,241 @@
       position: absolute;
       top: 20px;
       right: 240px;
+    }
+    .v-btn.v-size--default {
+      font-size: 20px;
+      font-weight: 900;
+      color: var(--color-blue);
+    }
+
+    .Listbtn {
+      transition: 0.3s;
+      margin-bottom: 20px;
+      margin-left: 20px;
+    }
+    .Listbtn:hover {
+      background-color: var(--color-lightY) !important;
+    }
+
+    .theme--light.v-btn.v-btn--has-bg {
+      background-color: var(--color-white);
+    }
+  }
+
+  .dialogbody {
+    width: 800px;
+    background: white;
+    padding-top: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 40px;
+    filter: drop-shadow(0px 0px 5px rgb(0, 0, 0));
+    overflow-y: auto;
+  }
+}
+
+@include md {
+  .contentleft {
+    background-color: var(--color-deepblue);
+    // border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 76.5%;
+    height: 95vh;
+    margin-left: 295px;
+    margin-top: -95vh;
+    padding-top: 3%;
+    padding-left: 5%;
+    overflow-y: auto;
+    display: flex;
+    justify-content: start;
+    color: var(--color-white);
+
+    .setRow {
+      width: 800px;
+      position: relative;
+      // background-color: red;
+    }
+
+    .card {
+      width: 350px;
+      border-radius: 10px;
+      margin: 20px;
+      position: relative;
+      filter: drop-shadow(0px 3px 2px rgb(0, 0, 0));
+      transition: 0.3s;
+    }
+
+    .v-sheet.v-card {
+      border-radius: 10px;
+    }
+
+    .card:hover {
+      transform: translateY(-20px);
+    }
+
+    .cardBtn {
+      position: absolute;
+      top: 180px;
+      right: 10px;
+      z-index: 3;
+      pointer-events: none;
+    }
+
+    .cardBtn2 {
+      position: absolute;
+      top: 180px;
+      right: 10px;
+      z-index: 3;
+      pointer-events: none;
+    }
+
+    .cardBtn3 {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      z-index: 3;
+    }
+
+    .cardBtn4 {
+      position: absolute;
+      top: 215px;
+      right: 60px;
+      z-index: 3;
+    }
+
+    .sell {
+      height: 20px !important;
+      line-height: 20px;
+      margin-left: auto;
+      font-size: 12px;
+      font-weight: 500;
+      padding-left: 5px;
+      padding-right: 5px;
+      border: 1px solid var(--color-white);
+    }
+
+    .cardBtn:hover .Btn1Icon {
+      color: var(--color-lightY) !important;
+    }
+
+    .cardBtn:hover .heartNum {
+      color: var(--color-lightY) !important;
+    }
+
+    .cardBtn2:hover .Btn2Icon {
+      color: var(--color-lightY) !important;
+    }
+
+    .cardBtn3:hover .Btn3Icon {
+      color: var(--color-lightY) !important;
+    }
+
+    .cardBtn4:hover .Btn4Icon {
+      color: var(--color-lightY) !important;
+    }
+
+    .v-chip__content {
+      font-weight: 900;
+    }
+
+    .v-chip {
+      margin-left: 10px;
+      height: 30px !important;
+    }
+
+    .hr {
+      width: 80%;
+      height: 1px;
+      background: var(--color-white);
+    }
+
+    .card-item {
+      width: 100%;
+    }
+    .col-4 {
+      padding: 0;
+    }
+
+    .cardLine {
+      width: 265px;
+      height: 340px;
+      border: 1px dashed var(--color-white);
+      border-radius: 5px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      margin-left: 0px;
+      // margin-right: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .cardLine:hover {
+      border: 1px dashed var(--color-lightY);
+    }
+
+    .cardLine:hover .addcard {
+      border: 1px dashed var(--color-lightY);
+      transform: scale(1.1);
+      transition: 0.5s;
+    }
+
+    .cardLine:hover .addpuls {
+      color: var(--color-lightY) !important;
+    }
+
+    .heartNum {
+      color: white;
+      font-weight: 700;
+    }
+
+    .addcard {
+      border: 1px dashed var(--color-white);
+    }
+
+    .addpuls {
+      color: var(--color-white) !important;
+    }
+    .search {
+      // width: 76.5%;
+      // height: 40px;
+      // border: 1px solid red;
+      // margin-left: 50px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+    .div200 {
+      width: 150px;
+      // background: red;
+      margin-left: auto;
+      // margin-right: 70px;
+      margin-top: -15px;
+    }
+    .theme--light.v-text-field > .v-input__control > .v-input__slot:before {
+      border-color: var(--color-white);
+      width: 150px;
+    }
+    .theme--light.v-input {
+      color: var(--color-lightY);
+    }
+
+    .theme--light.v-input input,
+    .theme--light.v-input textarea {
+      color: var(--color-lightY);
+      font-size: 20px;
+      margin-bottom: 5px;
+      text-align: center;
+    }
+    .v-text-field fieldset,
+    .v-text-field .v-input__control {
+      color: var(--color-lightY);
+    }
+    .searchIcon {
+      position: absolute;
+      top: 80px;
+      right: 120px;
     }
     .v-btn.v-size--default {
       font-size: 20px;

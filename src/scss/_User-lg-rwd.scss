@@ -5,19 +5,19 @@
 // }
 
 @mixin sm {
-  @media (max-width: $breakpoint-sm) {
+  @media (main-width: $breakpoint-sm) {
     @content;
   }
 }
 
 @mixin md {
-  @media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) {
+  @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) {
     @content;
   }
 }
 
 @mixin lg {
-  @media (min-width: $breakpoint-lg) {
+  @media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) {
     @content;
   }
 }
@@ -52,6 +52,8 @@
       position: relative;
       top: 100px;
       left: 110px;
+      width: 180px !important;
+      height: 180px !important;
     }
     .selfmeanu {
       width: 200px;
@@ -77,6 +79,15 @@
         margin-right: 10px;
       }
     }
+
+    .avatarSidebar {
+      position: relative;
+      top: 100px;
+      left: 110px;
+      width: 180px !important;
+      height: 180px !important;
+    }
+
     .selfmeanu2 {
       width: 210px;
       height: 450px;
@@ -266,7 +277,7 @@
     }
     .Usersolgon {
       // border: 1px solid var(--color-white);
-      width: 80px;
+      width: 135px;
       height: 36px;
       position: relative;
       top: 13px;
@@ -286,11 +297,20 @@
       background: var(--color-deepblue);
       margin-left: 400px;
     }
-    .avatarSidebar-md {
+    // .avatarSidebar-md {
+    //   position: relative;
+    //   top: 120px;
+    //   left: 90px;
+    // }
+
+    .avatarSidebar {
       position: relative;
-      top: 120px;
+      top: 150px;
       left: 90px;
+      width: 130px !important;
+      height: 130px !important;
     }
+
     .selfmeanu {
       width: 200px;
       height: 500px;
@@ -562,10 +582,13 @@
     //   background: var(--color-deepblue);
     //   margin-left: 0;
     // }
-    .avatarSidebar-xs {
+
+    .avatarSidebar {
       position: relative;
-      top: 85px;
-      left: 30px;
+      top: 150px;
+      left: 90px;
+      width: 60px !important;
+      height: 60px !important;
     }
     .selfmeanu {
       width: 250px;

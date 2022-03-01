@@ -15,7 +15,7 @@
                   <th class="text-center">製作天數</th>
                   <th class="text-center">報價</th>
                   <th class="text-center">作品風格</th>
-                  <th class="text-center">訊息/移除</th>
+                  <th class="text-center">訊息 | 移除</th>
                 </tr>
               </thead>
               <tbody>
@@ -49,7 +49,7 @@
                   </td> -->
                   <td class="text-center">
                     <router-link :to="`/owner/${owner._id}/ownerchats/`">
-                      <v-icon color="var(--color-white)" class="me-lg-2 favIcon">mdi-message-outline</v-icon>
+                      <v-icon color="var(--color-white)" class="me-xl-2 favIcon">mdi-message-outline</v-icon>
                     </router-link>
                     <v-icon color="var(--color-white)" class="favIconD" @click="deletefav(index)">mdi-delete</v-icon>
                   </td>

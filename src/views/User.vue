@@ -3,7 +3,7 @@
     <v-card class="overflow-hidden">
       <v-app-bar absolute hide-on-scroll prominent scroll-target="#scrolling-techniques-4" max-height="70" class="textWhite NAVbar" style="z-index: 5">
         <v-img class="logo1 me-xl-n2 ms-xl-8 d-none d-lg-flex" max-width="115" src="../assets/images/logo.png"></v-img>
-        <div class="Usersolgon rounded-pill ms-xl-n5">
+        <div class="Usersolgon rounded-pill ms-xl-n5 ms-md-n14">
           <div class="ctext1 me-xl-7 d-flex justify-center justify-lg-end align-center" style="height: 100%">會員中心</div>
         </div>
         <v-spacer></v-spacer>
@@ -423,15 +423,15 @@
           </label>
           <input id="xsUserMenu" type="checkbox" />
           <div class="sidebar" id="UserPageSIderbar">
-            <v-avatar size="180" class="avatarSidebar d-none d-xl-flex">
+            <v-avatar class="avatarSidebar">
               <v-img :src="'https://source.boringavatars.com/beam/120/' + userinfo.account"></v-img>
             </v-avatar>
-            <v-avatar size="60" class="avatarSidebar-xs d-flex d-lg-none">
+            <!-- <v-avatar size="60" class="avatarSidebar-xs">
               <v-img :src="'https://source.boringavatars.com/beam/120/' + userinfo.account"></v-img>
             </v-avatar>
-            <v-avatar size="130" class="avatarSidebar-md d-none d-xl-none d-md-flex">
+            <v-avatar size="130" class="avatarSidebar-md">
               <v-img :src="'https://source.boringavatars.com/beam/120/' + userinfo.account"></v-img>
-            </v-avatar>
+            </v-avatar> -->
             <div class="selfmeanu">
               <ul class="selfmeanuUl">
                 <li class="col-xs-6">

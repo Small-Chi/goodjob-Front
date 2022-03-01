@@ -15,7 +15,7 @@
                   <th class="text-center">結案日期</th>
                   <th class="text-center">預算</th>
                   <th class="text-center">需求風格</th>
-                  <th class="text-center">訊息/狀態/移除</th>
+                  <th class="text-center">訊息 | 狀態 | 移除</th>
                 </tr>
               </thead>
               <tbody>
@@ -23,9 +23,9 @@
                   <td class="text-center">
                     <router-link :to="`/user/${item.deal[0]._id}/userself/`">
                       <v-avatar size="40" class="me-2 avatarBtn">
-                        <v-img :src="'https://source.boringavatars.com/beam/120/' + owner.account"></v-img>
+                        <v-img :src="'https://source.boringavatars.com/beam/120/' + item.deal[0].account"></v-img>
                       </v-avatar>
-                      <span style="color: var(--color-lightY)">{{ item.owner.ownername }}</span>
+                      <span style="color: var(--color-lightY)">{{ item.deal[0].username }}</span>
                     </router-link>
                   </td>
                   <td class="text-center">
@@ -49,10 +49,10 @@
                   </td>
                   <td class="text-center">
                     <router-link :to="`/owner/${owner._id}/ownerchats/`">
-                      <v-icon color="var(--color-white)" class="me-lg-1 favIcon">mdi-message-outline</v-icon>
+                      <v-icon color="var(--color-white)" class="me-xl-1 favIcon">mdi-message-outline</v-icon>
                     </router-link>
                     <v-icon color="var(--color-white)" class="favIcon" @click="cantDo(index)">mdi-charity</v-icon>
-                    <v-icon color="var(--color-white)" class="favIconD ms-lg-5" @click="deleteCase(index)">mdi-delete</v-icon>
+                    <v-icon color="var(--color-white)" class="favIconD ms-xl-5" @click="deleteCase(index)">mdi-delete</v-icon>
                   </td>
                 </tr>
               </tbody>

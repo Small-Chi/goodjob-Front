@@ -1,6 +1,6 @@
 <template>
   <div id="listswiper">
-    <div class="name">
+    <div class="name me-5">
       <router-link :to="`/user/${portfolio._id}/userself/`">
         <v-avatar size="90" class="me-2 d-none d-lg-flex avatarSwipwer">
           <v-img :src="'https://source.boringavatars.com/beam/120/' + portfolio.account"></v-img>
@@ -77,8 +77,8 @@
       </swiper-slide>
 
       <!-- <div class="swiper-pagination" slot="pagination"></div> -->
-      <div class="swiper-button-next d-none d-lg-flex" slot="button-next"></div>
-      <div class="swiper-button-prev d-none d-lg-flex" slot="button-prev"></div>
+      <div class="swiper-button-next d-none d-xl-flex" slot="button-next"></div>
+      <div class="swiper-button-prev d-none d-xl-flex" slot="button-prev"></div>
     </swiper>
   </div>
 </template>
