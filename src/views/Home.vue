@@ -503,15 +503,15 @@
                   <div class="Topscore">
                     <div class="col-md-4 TopscoreI">
                       <v-icon class="scoreIcon" color="var(--color-white)">mdi-charity</v-icon>
-                      <p class="Tscore">219</p>
+                      <p class="Tscore">167</p>
                     </div>
                     <div class="col-md-4 TopscoreI">
                       <v-icon class="scoreIcon" color="var(--color-white)">mdi-thumb-up</v-icon>
-                      <p class="Tscore">163</p>
+                      <p class="Tscore">132</p>
                     </div>
                     <div class="col-md-4 TopscoreI">
                       <v-icon class="scoreIcon" color="var(--color-white)">mdi-thumb-down</v-icon>
-                      <p class="Tscore">56</p>
+                      <p class="Tscore">35</p>
                     </div>
                   </div>
                   <p>
@@ -532,15 +532,15 @@
                   <div class="Topscore">
                     <div class="col-md-4 TopscoreI">
                       <v-icon class="scoreIcon" color="var(--color-white)">mdi-charity</v-icon>
-                      <p class="Tscore">219</p>
+                      <p class="Tscore">97</p>
                     </div>
                     <div class="col-md-4 TopscoreI">
                       <v-icon class="scoreIcon" color="var(--color-white)">mdi-thumb-up</v-icon>
-                      <p class="Tscore">163</p>
+                      <p class="Tscore">83</p>
                     </div>
                     <div class="col-md-4 TopscoreI">
                       <v-icon class="scoreIcon" color="var(--color-white)">mdi-thumb-down</v-icon>
-                      <p class="Tscore">56</p>
+                      <p class="Tscore">14</p>
                     </div>
                   </div>
                   <p>
@@ -560,15 +560,15 @@
                   <div class="Topscore">
                     <div class="col-md-4 TopscoreI">
                       <v-icon class="scoreIcon" color="var(--color-white)">mdi-charity</v-icon>
-                      <p class="Tscore">219</p>
+                      <p class="Tscore">81</p>
                     </div>
                     <div class="col-md-4 TopscoreI">
                       <v-icon class="scoreIcon" color="var(--color-white)">mdi-thumb-up</v-icon>
-                      <p class="Tscore">163</p>
+                      <p class="Tscore">72</p>
                     </div>
                     <div class="col-md-4 TopscoreI">
                       <v-icon class="scoreIcon" color="var(--color-white)">mdi-thumb-down</v-icon>
-                      <p class="Tscore">56</p>
+                      <p class="Tscore">9</p>
                     </div>
                   </div>
                   <p>
