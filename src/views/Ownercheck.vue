@@ -15,7 +15,7 @@
                   <th class="text-center">結案日期</th>
                   <th class="text-center">預算</th>
                   <th class="text-center">需求風格</th>
-                  <th class="text-center">訊息 | 狀態 | 移除</th>
+                  <th class="text-center">訊息 | 同意 | 不同意</th>
                 </tr>
               </thead>
               <tbody>
@@ -51,8 +51,8 @@
                     <router-link :to="`/owner/${owner._id}/ownerchats/`">
                       <v-icon color="var(--color-white)" class="me-xl-1 favIcon">mdi-message-outline</v-icon>
                     </router-link>
-                    <v-icon color="var(--color-white)" class="favIcon" @click="cantDo(index)">mdi-charity</v-icon>
-                    <v-icon color="var(--color-white)" class="favIconD ms-xl-5" @click="NoDo(index)">mdi-delete</v-icon>
+                    <v-icon color="var(--color-white)" class="favIcon ms-xl-5" @click="cantDo(index)">mdi-check</v-icon>
+                    <v-icon color="var(--color-white)" class="favIconD ms-xl-5" @click="NoDo(index)">mdi-window-close</v-icon>
                   </td>
                 </tr>
               </tbody>
@@ -117,7 +117,7 @@
       async NoDo(index) {
         if (this.owner.isownerLogin) {
           try {
-            const whouser = this.whodo[index].deal[0]
+            const whouser = this.whodo[index].deal[0]._id
             console.log(whouser)
             await this.api.patch(
               'cases/dealNO/' + this.whodo[index]._id,
@@ -130,8 +130,8 @@
             )
             this.$swal({
               icon: 'success',
-              title: '成功',
-              text: '不同意投稿'
+              title: '婉拒',
+              text: '不同意接案'
             })
             this.getNew()
           } catch (error) {
@@ -205,7 +205,7 @@
         this.whodo = this.cases.filter(c => {
           return c.deal.length > 0 && c.deal.length < 2
         })
-        console.log(this.cases)
+        // console.log(this.cases)
       } catch (error) {
         this.$swal({
           icon: 'error',

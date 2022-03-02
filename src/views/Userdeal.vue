@@ -48,11 +48,19 @@
                     </router-link>
                   </td>
                   <td class="text-center">
-                    <router-link :to="`/user/${user._id}/userchats/`">
-                      <v-icon color="var(--color-white)" class="me-xl-1 favIcon">mdi-message-outline</v-icon>
-                    </router-link>
-                    <v-icon color="var(--color-white)" class="favIcon" @click="endCase(index)">mdi-charity</v-icon>
-                    <v-icon color="var(--color-white)" class="favIconD ms-xl-5" @click="deletefav(index)">mdi-delete</v-icon>
+                    <v-item-group>
+                      <router-link :to="`/user/${user._id}/userchats/`">
+                        <v-icon color="var(--color-white)" class="me-xl-1 favIcon">mdi-message-outline</v-icon>
+                      </router-link>
+                      <!-- <v-icon color="var(--color-white)" class="favIcon" @click="endCase(index)">mdi-charity</v-icon> -->
+                      <v-item v-slot="{ active, toggle }">
+                        <v-icon size="23" color="var(--color-lightY)" class="favIcon ms-xl-5" @click="toggle">
+                          {{ active ? 'mdi-charity' : 'mdi-clock-outline' }}
+                        </v-icon>
+                      </v-item>
+
+                      <v-icon color="var(--color-white)" class="favIconD ms-xl-5" @click="deletefav(index)">mdi-delete</v-icon>
+                    </v-item-group>
                   </td>
                 </tr>
               </tbody>

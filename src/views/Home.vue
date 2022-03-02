@@ -465,7 +465,166 @@
             </v-row>
           </section>
 
-          <div id="section2"></div>
+          <div id="section2">
+            <div class="SE2line d-none d-md-flex"></div>
+            <div class="row">
+              <div class="col-md-6 userTopLeft">
+                <div class="avaImg1"></div>
+                <div class="col-md-5 TopLeftText">
+                  <span class="TopName">Hancock</span>
+                  <div class="Topscore">
+                    <div class="col-md-4 TopscoreI">
+                      <v-icon class="scoreIcon" color="var(--color-white)">mdi-charity</v-icon>
+                      <p class="Tscore">219</p>
+                    </div>
+                    <div class="col-md-4 TopscoreI">
+                      <v-icon class="scoreIcon" color="var(--color-white)">mdi-thumb-up</v-icon>
+                      <p class="Tscore">163</p>
+                    </div>
+                    <div class="col-md-4 TopscoreI">
+                      <v-icon class="scoreIcon" color="var(--color-white)">mdi-thumb-down</v-icon>
+                      <p class="Tscore">56</p>
+                    </div>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt consectetur iste magni cupiditate nam deserunt suscipit totam aliquid
+                    ullam blanditiis? totam blanditiis assumenda incidunt tempore quis, reiciendis quaerat unde dicta esse minima facilis doloremque id optio
+                    deserunt quas nihil repellendus. Temporibus accusamus architecto sunt voluptate doloribus ad quos.
+                  </p>
+                </div>
+              </div>
+              <div class="d-none d-md-flex col-md-6"></div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 userTopRight order-md-2">
+                <div class="col-md-5 TopLeftText">
+                  <div class="avaImg2 d-flex d-md-none"></div>
+                  <span class="TopName">Linda Chang</span>
+                  <div class="Topscore">
+                    <div class="col-md-4 TopscoreI">
+                      <v-icon class="scoreIcon" color="var(--color-white)">mdi-charity</v-icon>
+                      <p class="Tscore">219</p>
+                    </div>
+                    <div class="col-md-4 TopscoreI">
+                      <v-icon class="scoreIcon" color="var(--color-white)">mdi-thumb-up</v-icon>
+                      <p class="Tscore">163</p>
+                    </div>
+                    <div class="col-md-4 TopscoreI">
+                      <v-icon class="scoreIcon" color="var(--color-white)">mdi-thumb-down</v-icon>
+                      <p class="Tscore">56</p>
+                    </div>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt consectetur iste magni cupiditate nam deserunt suscipit totam aliquid
+                    ullam blanditiis? totam blanditiis assumenda incidunt tempore quis, reiciendis quaerat unde dicta esse minima facilis doloremque id optio
+                    deserunt quas nihil repellendus. Temporibus accusamus architecto sunt voluptate doloribus ad quos.
+                  </p>
+                </div>
+                <div class="avaImg2 d-none d-md-flex"></div>
+              </div>
+              <div class="d-none d-md-flex col-md-6"></div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 userTopBottom">
+                <div class="avaImg3"></div>
+                <div class="col-md-5 TopLeftText">
+                  <span class="TopName">多肉饞讒</span>
+                  <div class="Topscore">
+                    <div class="col-md-4 TopscoreI">
+                      <v-icon class="scoreIcon" color="var(--color-white)">mdi-charity</v-icon>
+                      <p class="Tscore">219</p>
+                    </div>
+                    <div class="col-md-4 TopscoreI">
+                      <v-icon class="scoreIcon" color="var(--color-white)">mdi-thumb-up</v-icon>
+                      <p class="Tscore">163</p>
+                    </div>
+                    <div class="col-md-4 TopscoreI">
+                      <v-icon class="scoreIcon" color="var(--color-white)">mdi-thumb-down</v-icon>
+                      <p class="Tscore">56</p>
+                    </div>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt consectetur iste magni cupiditate nam deserunt suscipit totam aliquid
+                    ullam blanditiis? totam blanditiis assumenda incidunt tempore quis, reiciendis quaerat unde dicta esse minima facilis doloremque id optio
+                    deserunt quas nihil repellendus. Temporibus accusamus architecto sunt voluptate doloribus ad quos.
+                  </p>
+                </div>
+              </div>
+              <div class="d-none d-md-flex col-md-6"></div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 userTopRight order-2">
+                <div class="col-md-5 TopLeftText">
+                  <div class="avaImg4 d-flex d-md-none"></div>
+                  <span class="TopName">可口美</span>
+                  <div class="Topscore">
+                    <div class="col-md-4 TopscoreI">
+                      <v-icon class="scoreIcon" color="var(--color-white)">mdi-charity</v-icon>
+                      <p class="Tscore">219</p>
+                    </div>
+                    <div class="col-md-4 TopscoreI">
+                      <v-icon class="scoreIcon" color="var(--color-white)">mdi-thumb-up</v-icon>
+                      <p class="Tscore">163</p>
+                    </div>
+                    <div class="col-md-4 TopscoreI">
+                      <v-icon class="scoreIcon" color="var(--color-white)">mdi-thumb-down</v-icon>
+                      <p class="Tscore">56</p>
+                    </div>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt consectetur iste magni cupiditate nam deserunt suscipit totam aliquid
+                    ullam blanditiis? totam blanditiis assumenda incidunt tempore quis, reiciendis quaerat unde dicta esse minima facilis doloremque id optio
+                    deserunt quas nihil repellendus. Temporibus accusamus architecto sunt voluptate doloribus ad quos.
+                  </p>
+                </div>
+                <div class="avaImg4 d-none d-md-flex"></div>
+              </div>
+              <div class="d-none d-md-flex col-md-6"></div>
+            </div>
+          </div>
+
+          <div id="section3">
+            <div class="se3about col-xl-8">
+              <div class="aboutcontent col-xl-12">
+                <div class="col-xl-4 text-lg-left">
+                  <h6>CONTACTS</h6>
+                  <p>
+                    <v-icon color="var(--color-white)" class="me-1 con">mdi-map-marker</v-icon>
+                    新北市泰山區貴子里致遠新村55之1號
+                  </p>
+                  <p>
+                    <v-icon color="var(--color-white)" class="me-1 con">mdi-phone</v-icon>
+                    0912345678
+                  </p>
+                  <p>
+                    <v-icon color="var(--color-white)" class="me-1 con">mdi-email</v-icon>
+                    Demo@mail.com
+                  </p>
+                </div>
+                <div class="col-xl-4 text-lg-center px-xl-5">
+                  <v-img class="ms-auto me-auto mb-5 d-none d-xl-flex" max-width="150" src="../assets/images/logo.png"></v-img>
+                  <v-img class="ms-md-auto me-auto mb-5 d-flex d-xl-none" max-width="100" src="../assets/images/logo.png"></v-img>
+                  <h6>關於 goodjob</h6>
+                  <span>
+                    在家工作的「SOHO型態」及「專業外包」將是未來趨勢，但市面上的外包網站版面太過雜亂、使用複雜，為解決這些問題，產生了優化外包網的概念網站「goodjob」
+                  </span>
+                  <p>
+                    <v-icon left right class="mt-2 ms-n1 ms-xl-0 mb-5 mt-xl-6 footerIcon" color="var(--color-lightY) ">mdi-facebook</v-icon>
+                    <v-icon left right class="mt-2 mb-5 mt-xl-6 footerIcon" color="var(--color-lightY) ">mdi-instagram</v-icon>
+                    <v-icon left right class="mt-2 mb-5 mt-xl-6 footerIcon" color="var(--color-lightY) ">mdi-youtube</v-icon>
+                    <v-icon left right class="mt-2 mb-5 mt-xl-6 footerIcon" color="var(--color-lightY) ">mdi-twitter</v-icon>
+                  </p>
+                </div>
+                <div class="col-xl-4 text-lg-right">
+                  <h6>WORKING HOURS</h6>
+                  <p>Mon – Fri: 7.00am – 6.00pm</p>
+                  <p>Sat: 7.00am – 6.00pm</p>
+                  <p>Sun: 8.00am – 6.00pm</p>
+                </div>
+              </div>
+              <div class="col-12 text-center pt-4 footerT" style="border-top: 1px solid var(--color-white)">Delish&copy;2021. All rights reserved.</div>
+            </div>
+          </div>
         </v-container>
       </v-sheet>
     </v-card>
@@ -478,6 +637,10 @@
 <script>
   import UserRegisters from '../components/UserRegister.vue'
   import Carousels from '../components/Carousel.vue'
+  import { gsap } from 'gsap'
+  import { ScrollTrigger } from 'gsap/ScrollTrigger'
+  gsap.registerPlugin(ScrollTrigger)
+
   export default {
     components: { UserRegisters, Carousels },
     data() {
@@ -494,6 +657,39 @@
         // 連到的是 actions 裡的 ownerlogout
         this.$store.dispatch('owner/ownerlogout')
       }
+    },
+    mounted() {
+      gsap.to('.avaImg1', {
+        duration: 1,
+        repeat: 0,
+        yoyo: false,
+        ease: 'none',
+        x: '47.5vw'
+      })
+      gsap.to('.avaImg2', {
+        delay: 1,
+        duration: 1,
+        repeat: 0,
+        yoyo: false,
+        ease: 'none',
+        x: '-49vw'
+      })
+      gsap.to('.avaImg3', {
+        delay: 2,
+        duration: 1,
+        repeat: 0,
+        yoyo: false,
+        ease: 'none',
+        x: '47vw'
+      })
+      gsap.to('.avaImg4', {
+        delay: 3,
+        duration: 1,
+        repeat: 0,
+        yoyo: false,
+        ease: 'none',
+        x: '-49vw'
+      })
     }
   }
 </script>

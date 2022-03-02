@@ -178,7 +178,7 @@
       position: absolute;
       width: 70%;
       // height: 350px;
-      top: 85%;
+      top: 90%;
       left: 15.7%;
       z-index: 1;
       display: flex;
@@ -253,178 +253,238 @@
   }
 
   #section2 {
-    height: 100vh;
-    .header {
-      height: 80px;
-      border-bottom: 1px solid white;
+    // height: 100vh;
+    padding-bottom: 200px;
+    position: relative;
+    .SE2line {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 1px;
+      height: 100%;
+      background: var(--color-chatblue);
     }
-    .solgon2 {
-      // border: 1px solid var(--color-white);
-      width: 140px;
-      height: 36px;
+    .userTopLeft {
+      margin-top: 25vh;
+      height: 500px;
+      // border: 1px solid red;
+      display: flex;
+      justify-content: flex-end;
+      padding: 20px;
+
+      .avaImg1 {
+        margin-top: 15px;
+        width: 200px;
+        height: 200px;
+        position: relative;
+        top: 0;
+        left: -100%;
+        border-radius: 50%;
+        background: url('https://picsum.photos/300/200/?random=10') no-repeat center / cover;
+        filter: drop-shadow(0px 5px 3px rgb(0, 0, 0));
+      }
+    }
+
+    .userTopRight {
+      height: 500px;
+      // border: 1px solid red;
+      display: flex;
+      justify-content: flex-start;
+      padding: 20px;
+      background-color: redf;
+
+      .avaImg2 {
+        margin-top: 15px;
+        width: 200px;
+        height: 200px;
+        position: relative;
+        top: 0;
+        right: -100%;
+        border-radius: 50%;
+        background: url('https://picsum.photos/300/200/?random=5') no-repeat center / cover;
+        filter: drop-shadow(0px 5px 3px rgb(0, 0, 0));
+      }
+      .avaImg4 {
+        margin-top: 15px;
+        position: relative;
+        top: 0;
+        right: -100%;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background: url('https://picsum.photos/300/200/?random=3') no-repeat center / cover;
+        filter: drop-shadow(0px 5px 3px rgb(0, 0, 0));
+      }
+    }
+
+    .userTopBottom {
+      height: 500px;
+      // border: 1px solid red;
+      display: flex;
+      justify-content: flex-end;
+      padding: 20px;
+      .avaImg3 {
+        margin-top: 15px;
+        width: 200px;
+        height: 200px;
+        position: relative;
+        top: 0;
+        left: -100%;
+        border-radius: 50%;
+        background: url('https://picsum.photos/300/200/?random=7') no-repeat center / cover;
+        filter: drop-shadow(0px 5px 3px rgb(0, 0, 0));
+      }
+    }
+
+    .Topscore {
+      display: flex;
+    }
+
+    .TopName {
+      color: var(--color-lightY);
       position: relative;
+      font-size: 2.5rem;
+      // font-weight: 700;
+    }
+
+    .TopName::before {
+      content: '';
+      width: 100%;
+      height: 50px;
+      border-bottom: 1px solid var(--color-lightY);
+      margin-right: 30px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .TopLeftText {
+      .TopscoreI {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .Tscore {
+        font-size: 3rem;
+        color: var(--color-lightY);
+        // background-color: red;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0px;
+      }
+    }
+
+    p {
+      color: var(--color-white);
+      font-size: 1.3em;
+      word-break: break-all;
+      // background: red;
     }
   }
 
-  // NAV 導覽列--------------------------------------------------
-
-  // .navA {
-  //   position: relative;
-  //   top: 20px;
-  //   border-right: 2px solid var(--color-white);
-  //   a:hover {
-  //     color: var(--color-lightY) !important;
-  //   }
-  // }
-
-  // .logo1 {
-  //   position: relative;
-  //   top: 8px;
-  // }
-
-  // .solgon {
-  //   // border: 1px solid var(--color-white);
-  //   width: 210px;
-  //   height: 36px;
-  //   position: relative;
-  //   top: 13px;
-  // }
-
-  // // 登入紐
-  // .login {
-  //   font-size: 20px;
-  //   font-weight: 500;
-  //   // border: 1px solid var(--color-white) !important;
-  //   margin-top: 14px;
-  // }
-
-  // .login:hover {
-  //   color: var(--color-lightY) !important;
-  //   // border: 1px solid var(--color-lightY) !important;
-  // }
-
-  // .overflowY {
-  //   overflow-y: none !important;
-  // }
-
-  // // xs sidebar 的選單紐
-  // input[type='checkbox'] {
-  //   display: none;
-  // }
-
-  // .btn1 {
-  //   font-size: 20px;
-  //   font-weight: 500;
-  //   background-color: var(--color-blue) !important;
-  //   border: 1px solid var(--color-blue) !important;
-  // }
-
-  // .btn1:hover {
-  //   color: var(--color-lightY) !important;
-  //   background-color: var(--color-deepblue) !important;
-  //   border: 1px solid var(--color-deepblue) !important;
-  // }
-
-  // .btn2 {
-  //   font-size: 17px !important;
-  //   font-weight: 700;
-  //   color: var(--color-blue) !important;
-  //   border-left: 1px solid var(--color-blue);
-  //   border-right: 1px solid var(--color-blue);
-  // }
-
-  // .btn2:hover {
-  //   color: var(--color-red) !important;
-  // }
-
-  // .savebtn {
-  //   pointer-events: none;
-  // }
-
-  // .savebtn:hover {
-  //   text-decoration: underline;
-  // }
-
-  // .avatars {
-  //   height: 30px;
-  //   position: relative;
-  //   top: 11px;
-  //   cursor: pointer;
-  // }
-
-  // .avatars:hover .down {
-  //   color: var(--color-lightY) !important;
-  // }
-
-  // .userList {
-  //   position: absolute;
-  //   padding: 15px;
-  //   top: 35px;
-  //   right: -50px;
-  //   background-color: var(--color-blue);
-  //   display: flex;
-  //   justify-content: center;
-  //   align-items: center;
-  //   display: none;
-  //   filter: drop-shadow(0px 5px 3px rgb(0, 0, 0));
-  //   .memBtn:hover .memIcon {
-  //     color: var(--color-lightY) !important;
-  //   }
-  //   .memBtn:hover a {
-  //     color: var(--color-lightY) !important;
-  //   }
-  //   .mg {
-  //     margin-left: 10px;
-  //     margin-right: 10px;
-  //   }
-  // }
-
-  // #user:hover .userList {
-  //   display: block;
-  //   animation: divAnimation 0.3s linear forwards;
-  // }
-
-  // #user {
-  //   padding-bottom: 50px;
-  // }
-
-  // .ownerList {
-  //   position: absolute;
-  //   padding: 15px;
-  //   top: 35px;
-  //   right: -50px;
-  //   background-color: var(--color-blue);
-  //   display: flex;
-  //   justify-content: center;
-  //   align-items: center;
-  //   display: none;
-  //   filter: drop-shadow(0px 5px 3px rgb(0, 0, 0));
-  //   .memBtn:hover .memIcon {
-  //     color: var(--color-lightY) !important;
-  //   }
-  //   .memBtn:hover a {
-  //     color: var(--color-lightY) !important;
-  //   }
-  //   .mg {
-  //     margin-left: 10px;
-  //     margin-right: 10px;
-  //   }
-  // }
-
-  // #owner:hover .ownerList {
-  //   display: block;
-  //   animation: divAnimation 0.3s linear forwards;
-  // }
-
-  // #owner {
-  //   padding-bottom: 50px;
-  // }
-
-  // @keyframes divAnimation {
-  //   100% {
-  //     transform: translateY(10px);
-  //   }
-  // }
+  #section3 {
+    background: var(--color-deepblue);
+    color: var(--color-white);
+    display: flex;
+    justify-content: center;
+    padding: 80px;
+    .se3about {
+      display: flex;
+      flex-direction: column;
+      // background: red;
+      .aboutcontent {
+        display: flex;
+        flex-direction: row;
+        // background: green;
+      }
+    }
+    h6 {
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 1rem;
+      line-height: 16px;
+    }
+    .col-xl,
+    .col-xl-auto,
+    .col-xl-12,
+    .col-xl-11,
+    .col-xl-10,
+    .col-xl-9,
+    .col-xl-8,
+    .col-xl-7,
+    .col-xl-6,
+    .col-xl-5,
+    .col-xl-4,
+    .col-xl-3,
+    .col-xl-2,
+    .col-xl-1,
+    .col-lg,
+    .col-lg-auto,
+    .col-lg-12,
+    .col-lg-11,
+    .col-lg-10,
+    .col-lg-9,
+    .col-lg-8,
+    .col-lg-7,
+    .col-lg-6,
+    .col-lg-5,
+    .col-lg-4,
+    .col-lg-3,
+    .col-lg-2,
+    .col-lg-1,
+    .col-md,
+    .col-md-auto,
+    .col-md-12,
+    .col-md-11,
+    .col-md-10,
+    .col-md-9,
+    .col-md-8,
+    .col-md-7,
+    .col-md-6,
+    .col-md-5,
+    .col-md-4,
+    .col-md-3,
+    .col-md-2,
+    .col-md-1,
+    .col-sm,
+    .col-sm-auto,
+    .col-sm-12,
+    .col-sm-11,
+    .col-sm-10,
+    .col-sm-9,
+    .col-sm-8,
+    .col-sm-7,
+    .col-sm-6,
+    .col-sm-5,
+    .col-sm-4,
+    .col-sm-3,
+    .col-sm-2,
+    .col-sm-1,
+    .col,
+    .col-auto,
+    .col-12,
+    .col-11,
+    .col-10,
+    .col-9,
+    .col-8,
+    .col-7,
+    .col-6,
+    .col-5,
+    .col-4,
+    .col-3,
+    .col-2,
+    .col-1 {
+      padding: 5px;
+    }
+    .footerIcon {
+      cursor: pointer;
+    }
+    .con {
+      font-size: 20px;
+    }
+  }
 }
 
 @include md {
@@ -649,178 +709,237 @@
   }
 
   #section2 {
-    height: 100vh;
-    .header {
-      height: 80px;
-      border-bottom: 1px solid white;
+    // height: 100vh;
+    padding-bottom: 100px;
+    position: relative;
+    .SE2line {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 1px;
+      height: 100%;
+      background: var(--color-chatblue);
     }
-    .solgon2 {
-      // border: 1px solid var(--color-white);
-      width: 140px;
-      height: 36px;
+    .userTopLeft {
+      margin-top: 25vh;
+      height: 500px;
+      // border: 1px solid red;
+      display: flex;
+      justify-content: flex-end;
+      padding: 20px;
+
+      .avaImg1 {
+        margin-top: 15px;
+        width: 200px;
+        height: 200px;
+        position: relative;
+        top: 0;
+        left: -102%;
+        border-radius: 50%;
+        background: url('https://picsum.photos/300/200/?random=10') no-repeat center / cover;
+        filter: drop-shadow(0px 5px 3px rgb(0, 0, 0));
+      }
+    }
+
+    .userTopRight {
+      height: 500px;
+      // border: 1px solid red;
+      display: flex;
+      justify-content: flex-start;
+      padding: 20px;
+      background-color: redf;
+
+      .avaImg2 {
+        margin-top: 15px;
+        width: 200px;
+        height: 200px;
+        position: relative;
+        top: 0;
+        right: -103%;
+        border-radius: 50%;
+        background: url('https://picsum.photos/300/200/?random=5') no-repeat center / cover;
+        filter: drop-shadow(0px 5px 3px rgb(0, 0, 0));
+      }
+      .avaImg4 {
+        margin-top: 15px;
+        position: relative;
+        top: 0;
+        right: -103%;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background: url('https://picsum.photos/300/200/?random=3') no-repeat center / cover;
+        filter: drop-shadow(0px 5px 3px rgb(0, 0, 0));
+      }
+    }
+
+    .userTopBottom {
+      height: 500px;
+      // border: 1px solid red;
+      display: flex;
+      justify-content: flex-end;
+      padding: 20px;
+      .avaImg3 {
+        margin-top: 15px;
+        width: 200px;
+        height: 200px;
+        position: relative;
+        top: 0;
+        left: -102%;
+        border-radius: 50%;
+        background: url('https://picsum.photos/300/200/?random=7') no-repeat center / cover;
+        filter: drop-shadow(0px 5px 3px rgb(0, 0, 0));
+      }
+    }
+
+    .Topscore {
+      display: flex;
+    }
+
+    .TopName {
+      color: var(--color-lightY);
       position: relative;
+      font-size: 2rem;
+      // font-weight: 700;
+    }
+
+    .TopName::before {
+      content: '';
+      width: 100%;
+      height: 40px;
+      border-bottom: 1px solid var(--color-lightY);
+      margin-right: 30px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .TopLeftText {
+      .TopscoreI {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .Tscore {
+        font-size: 1.5rem;
+        color: var(--color-lightY);
+        // background-color: red;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0px;
+      }
+    }
+
+    p {
+      color: var(--color-white);
+      font-size: 1em;
+      word-break: break-all;
+      // background: red;
     }
   }
-
-  // NAV 導覽列--------------------------------------------------
-
-  // .navA {
-  //   position: relative;
-  //   top: 20px;
-  //   border-right: 2px solid var(--color-white);
-  //   a:hover {
-  //     color: var(--color-lightY) !important;
-  //   }
-  // }
-
-  // .logo1 {
-  //   position: relative;
-  //   top: 8px;
-  // }
-
-  // .solgon {
-  //   // border: 1px solid var(--color-white);
-  //   width: 210px;
-  //   height: 36px;
-  //   position: relative;
-  //   top: 13px;
-  // }
-
-  // // 登入紐
-  // .login {
-  //   font-size: 20px;
-  //   font-weight: 500;
-  //   // border: 1px solid var(--color-white) !important;
-  //   margin-top: 14px;
-  // }
-
-  // .login:hover {
-  //   color: var(--color-lightY) !important;
-  //   // border: 1px solid var(--color-lightY) !important;
-  // }
-
-  // .overflowY {
-  //   overflow-y: none !important;
-  // }
-
-  // // xs sidebar 的選單紐
-  // input[type='checkbox'] {
-  //   display: none;
-  // }
-
-  // .btn1 {
-  //   font-size: 20px;
-  //   font-weight: 500;
-  //   background-color: var(--color-blue) !important;
-  //   border: 1px solid var(--color-blue) !important;
-  // }
-
-  // .btn1:hover {
-  //   color: var(--color-lightY) !important;
-  //   background-color: var(--color-deepblue) !important;
-  //   border: 1px solid var(--color-deepblue) !important;
-  // }
-
-  // .btn2 {
-  //   font-size: 17px !important;
-  //   font-weight: 700;
-  //   color: var(--color-blue) !important;
-  //   border-left: 1px solid var(--color-blue);
-  //   border-right: 1px solid var(--color-blue);
-  // }
-
-  // .btn2:hover {
-  //   color: var(--color-red) !important;
-  // }
-
-  // .savebtn {
-  //   pointer-events: none;
-  // }
-
-  // .savebtn:hover {
-  //   text-decoration: underline;
-  // }
-
-  // .avatars {
-  //   height: 30px;
-  //   position: relative;
-  //   top: 11px;
-  //   cursor: pointer;
-  // }
-
-  // .avatars:hover .down {
-  //   color: var(--color-lightY) !important;
-  // }
-
-  // .userList {
-  //   position: absolute;
-  //   padding: 15px;
-  //   top: 35px;
-  //   right: -50px;
-  //   background-color: var(--color-blue);
-  //   display: flex;
-  //   justify-content: center;
-  //   align-items: center;
-  //   display: none;
-  //   filter: drop-shadow(0px 5px 3px rgb(0, 0, 0));
-  //   .memBtn:hover .memIcon {
-  //     color: var(--color-lightY) !important;
-  //   }
-  //   .memBtn:hover a {
-  //     color: var(--color-lightY) !important;
-  //   }
-  //   .mg {
-  //     margin-left: 10px;
-  //     margin-right: 10px;
-  //   }
-  // }
-
-  // #user:hover .userList {
-  //   display: block;
-  //   animation: divAnimation 0.3s linear forwards;
-  // }
-
-  // #user {
-  //   padding-bottom: 50px;
-  // }
-
-  // .ownerList {
-  //   position: absolute;
-  //   padding: 15px;
-  //   top: 35px;
-  //   right: -50px;
-  //   background-color: var(--color-blue);
-  //   display: flex;
-  //   justify-content: center;
-  //   align-items: center;
-  //   display: none;
-  //   filter: drop-shadow(0px 5px 3px rgb(0, 0, 0));
-  //   .memBtn:hover .memIcon {
-  //     color: var(--color-lightY) !important;
-  //   }
-  //   .memBtn:hover a {
-  //     color: var(--color-lightY) !important;
-  //   }
-  //   .mg {
-  //     margin-left: 10px;
-  //     margin-right: 10px;
-  //   }
-  // }
-
-  // #owner:hover .ownerList {
-  //   display: block;
-  //   animation: divAnimation 0.3s linear forwards;
-  // }
-
-  // #owner {
-  //   padding-bottom: 50px;
-  // }
-
-  // @keyframes divAnimation {
-  //   100% {
-  //     transform: translateY(10px);
-  //   }
-  // }
+  #section3 {
+    background: var(--color-deepblue);
+    color: var(--color-white);
+    display: flex;
+    justify-content: center;
+    padding: 80px;
+    .se3about {
+      display: flex;
+      flex-direction: column;
+      // background: red;
+      .aboutcontent {
+        display: flex;
+        flex-direction: row;
+        // background: green;
+      }
+    }
+    h6 {
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 1rem;
+      line-height: 16px;
+    }
+    .col-xl,
+    .col-xl-auto,
+    .col-xl-12,
+    .col-xl-11,
+    .col-xl-10,
+    .col-xl-9,
+    .col-xl-8,
+    .col-xl-7,
+    .col-xl-6,
+    .col-xl-5,
+    .col-xl-4,
+    .col-xl-3,
+    .col-xl-2,
+    .col-xl-1,
+    .col-lg,
+    .col-lg-auto,
+    .col-lg-12,
+    .col-lg-11,
+    .col-lg-10,
+    .col-lg-9,
+    .col-lg-8,
+    .col-lg-7,
+    .col-lg-6,
+    .col-lg-5,
+    .col-lg-4,
+    .col-lg-3,
+    .col-lg-2,
+    .col-lg-1,
+    .col-md,
+    .col-md-auto,
+    .col-md-12,
+    .col-md-11,
+    .col-md-10,
+    .col-md-9,
+    .col-md-8,
+    .col-md-7,
+    .col-md-6,
+    .col-md-5,
+    .col-md-4,
+    .col-md-3,
+    .col-md-2,
+    .col-md-1,
+    .col-sm,
+    .col-sm-auto,
+    .col-sm-12,
+    .col-sm-11,
+    .col-sm-10,
+    .col-sm-9,
+    .col-sm-8,
+    .col-sm-7,
+    .col-sm-6,
+    .col-sm-5,
+    .col-sm-4,
+    .col-sm-3,
+    .col-sm-2,
+    .col-sm-1,
+    .col,
+    .col-auto,
+    .col-12,
+    .col-11,
+    .col-10,
+    .col-9,
+    .col-8,
+    .col-7,
+    .col-6,
+    .col-5,
+    .col-4,
+    .col-3,
+    .col-2,
+    .col-1 {
+      padding: 5px;
+    }
+    .footerIcon {
+      cursor: pointer;
+    }
+    .con {
+      font-size: 20px;
+    }
+  }
 }
 
 @include sm {
@@ -1056,17 +1175,234 @@
   }
 
   #section2 {
-    height: 100vh;
-    background-color: var(--color-deepblue);
-    .header {
-      height: 80px;
-      border-bottom: 1px solid white;
+    height: 100% !important;
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    .SE2line {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 1px;
+      height: 100%;
+      background: var(--color-chatblue);
     }
-    .solgon2 {
-      // border: 1px solid var(--color-white);
-      width: 140px;
-      height: 36px;
+    .userTopLeft {
+      padding: 20px 30px;
+
+      .avaImg1 {
+        // margin-top: 15px;
+        width: 150px;
+        height: 150px;
+        position: relative;
+        top: 0;
+        left: -10%;
+        border-radius: 50%;
+        background: url('https://picsum.photos/300/200/?random=10') no-repeat center / cover;
+        filter: drop-shadow(0px 5px 3px rgb(0, 0, 0));
+      }
+    }
+
+    .userTopRight {
+      padding: 20px 30px;
+
+      .avaImg2 {
+        // margin-top: 15px;
+        margin-bottom: 5px;
+        width: 150px;
+        height: 150px;
+        position: relative;
+        top: -10px;
+        right: -93%;
+        border-radius: 50%;
+        background: url('https://picsum.photos/300/200/?random=5') no-repeat center / cover;
+        filter: drop-shadow(0px 5px 3px rgb(0, 0, 0));
+      }
+      .avaImg4 {
+        // margin-top: 15px;
+        position: relative;
+        margin-bottom: 17px;
+        top: 0;
+        right: -93%;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background: url('https://picsum.photos/300/200/?random=3') no-repeat center / cover;
+        filter: drop-shadow(0px 5px 3px rgb(0, 0, 0));
+      }
+    }
+
+    .userTopBottom {
+      padding: 20px 30px;
+      .avaImg3 {
+        // margin-top: 15px;
+        margin-bottom: 5px;
+        width: 150px;
+        height: 150px;
+        position: relative;
+        top: 0;
+        left: -9.5%;
+        border-radius: 50%;
+        background: url('https://picsum.photos/300/200/?random=7') no-repeat center / cover;
+        filter: drop-shadow(0px 5px 3px rgb(0, 0, 0));
+      }
+    }
+
+    .Topscore {
+      display: flex;
+    }
+
+    .TopName {
+      color: var(--color-lightY);
       position: relative;
+      font-size: 1.5rem;
+
+      // font-weight: 700;
+    }
+
+    .TopName::before {
+      content: '';
+      width: 100%;
+      height: 33px;
+      border-bottom: 1px solid var(--color-lightY);
+      margin-right: 30px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .TopLeftText {
+      .TopscoreI {
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .Tscore {
+        font-size: 1.2rem;
+        color: var(--color-lightY);
+        // background-color: red;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0px;
+      }
+    }
+
+    p {
+      color: var(--color-white);
+      font-size: 1em;
+      word-break: bread;
+      // background: red;
+    }
+  }
+  #section3 {
+    background: var(--color-deepblue);
+    color: var(--color-white);
+    display: flex;
+    justify-content: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 50px;
+    padding-bottom: 25px;
+
+    span {
+      line-height: 30px;
+      font-size: 0.8rem;
+    }
+
+    h6 {
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
+    .footerT {
+      font-size: 0.8rem;
+    }
+
+    p {
+      font-size: 0.8rem;
+      line-height: 16px;
+    }
+    .col-xl,
+    .col-xl-auto,
+    .col-xl-12,
+    .col-xl-11,
+    .col-xl-10,
+    .col-xl-9,
+    .col-xl-8,
+    .col-xl-7,
+    .col-xl-6,
+    .col-xl-5,
+    .col-xl-4,
+    .col-xl-3,
+    .col-xl-2,
+    .col-xl-1,
+    .col-lg,
+    .col-lg-auto,
+    .col-lg-12,
+    .col-lg-11,
+    .col-lg-10,
+    .col-lg-9,
+    .col-lg-8,
+    .col-lg-7,
+    .col-lg-6,
+    .col-lg-5,
+    .col-lg-4,
+    .col-lg-3,
+    .col-lg-2,
+    .col-lg-1,
+    .col-md,
+    .col-md-auto,
+    .col-md-12,
+    .col-md-11,
+    .col-md-10,
+    .col-md-9,
+    .col-md-8,
+    .col-md-7,
+    .col-md-6,
+    .col-md-5,
+    .col-md-4,
+    .col-md-3,
+    .col-md-2,
+    .col-md-1,
+    .col-sm,
+    .col-sm-auto,
+    .col-sm-12,
+    .col-sm-11,
+    .col-sm-10,
+    .col-sm-9,
+    .col-sm-8,
+    .col-sm-7,
+    .col-sm-6,
+    .col-sm-5,
+    .col-sm-4,
+    .col-sm-3,
+    .col-sm-2,
+    .col-sm-1,
+    .col,
+    .col-auto,
+    .col-12,
+    .col-11,
+    .col-10,
+    .col-9,
+    .col-8,
+    .col-7,
+    .col-6,
+    .col-5,
+    .col-4,
+    .col-3,
+    .col-2,
+    .col-1 {
+      padding: 5px;
+    }
+    .footerIcon {
+      cursor: pointer;
+    }
+
+    .footerIcon:hover {
+      color: var(--color-lightY) !important;
+    }
+    .con {
+      font-size: 16px;
     }
   }
 }
@@ -1231,7 +1567,7 @@
       align-items: center;
       z-index: 3;
       padding-bottom: 110px;
-      // background: var(--color-white);
+      background: var(--color-white);
     }
 
     .gCard {
@@ -1302,17 +1638,235 @@
   }
 
   #section2 {
-    height: 100vh;
-    background-color: var(--color-deepblue);
-    .header {
-      height: 80px;
-      border-bottom: 1px solid white;
+    height: 100% !important;
+    position: relative;
+    padding-top: 50px;
+    text-align: center;
+    background: var(--color-blue) !important;
+    .SE2line {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 1px;
+      height: 100%;
+      background: var(--color-chatblue);
     }
-    .solgon2 {
-      // border: 1px solid var(--color-white);
-      width: 140px;
-      height: 36px;
+    .userTopLeft {
+      padding: 20px 30px;
+
+      .avaImg1 {
+        // margin-top: 15px;
+        width: 150px;
+        height: 150px;
+        position: relative;
+        top: 0;
+        left: -25%;
+        border-radius: 50%;
+        background: url('https://picsum.photos/300/200/?random=10') no-repeat center / cover;
+        filter: drop-shadow(0px 5px 3px rgb(0, 0, 0));
+      }
+    }
+
+    .userTopRight {
+      padding: 20px 30px;
+
+      .avaImg2 {
+        // margin-top: 15px;
+        margin-bottom: 5px;
+        width: 150px;
+        height: 150px;
+        position: relative;
+        top: -10px;
+        right: -85%;
+        border-radius: 50%;
+        background: url('https://picsum.photos/300/200/?random=5') no-repeat center / cover;
+        filter: drop-shadow(0px 5px 3px rgb(0, 0, 0));
+      }
+      .avaImg4 {
+        // margin-top: 15px;
+        position: relative;
+        margin-bottom: 17px;
+        top: 0;
+        right: -85%;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background: url('https://picsum.photos/300/200/?random=3') no-repeat center / cover;
+        filter: drop-shadow(0px 5px 3px rgb(0, 0, 0));
+      }
+    }
+
+    .userTopBottom {
+      padding: 20px 30px;
+      .avaImg3 {
+        // margin-top: 15px;
+        margin-bottom: 5px;
+        width: 150px;
+        height: 150px;
+        position: relative;
+        top: 0;
+        left: -25%;
+        border-radius: 50%;
+        background: url('https://picsum.photos/300/200/?random=7') no-repeat center / cover;
+        filter: drop-shadow(0px 5px 3px rgb(0, 0, 0));
+      }
+    }
+
+    .Topscore {
+      display: flex;
+    }
+
+    .TopName {
+      color: var(--color-lightY);
       position: relative;
+      font-size: 1.5rem;
+
+      // font-weight: 700;
+    }
+
+    .TopName::before {
+      content: '';
+      width: 100%;
+      height: 33px;
+      border-bottom: 1px solid var(--color-lightY);
+      margin-right: 30px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .TopLeftText {
+      .TopscoreI {
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .Tscore {
+        font-size: 1.2rem;
+        color: var(--color-lightY);
+        // background-color: red;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0px;
+      }
+    }
+
+    p {
+      color: var(--color-white);
+      font-size: 1em;
+      word-break: bread;
+      // background: red;
+    }
+  }
+
+  #section3 {
+    background: var(--color-deepblue);
+    color: var(--color-white);
+    display: flex;
+    justify-content: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 50px;
+    padding-bottom: 25px;
+
+    span {
+      line-height: 30px;
+      font-size: 0.8rem;
+    }
+
+    h6 {
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
+    .footerT {
+      font-size: 0.8rem;
+    }
+
+    p {
+      font-size: 0.8rem;
+      line-height: 16px;
+    }
+    .col-xl,
+    .col-xl-auto,
+    .col-xl-12,
+    .col-xl-11,
+    .col-xl-10,
+    .col-xl-9,
+    .col-xl-8,
+    .col-xl-7,
+    .col-xl-6,
+    .col-xl-5,
+    .col-xl-4,
+    .col-xl-3,
+    .col-xl-2,
+    .col-xl-1,
+    .col-lg,
+    .col-lg-auto,
+    .col-lg-12,
+    .col-lg-11,
+    .col-lg-10,
+    .col-lg-9,
+    .col-lg-8,
+    .col-lg-7,
+    .col-lg-6,
+    .col-lg-5,
+    .col-lg-4,
+    .col-lg-3,
+    .col-lg-2,
+    .col-lg-1,
+    .col-md,
+    .col-md-auto,
+    .col-md-12,
+    .col-md-11,
+    .col-md-10,
+    .col-md-9,
+    .col-md-8,
+    .col-md-7,
+    .col-md-6,
+    .col-md-5,
+    .col-md-4,
+    .col-md-3,
+    .col-md-2,
+    .col-md-1,
+    .col-sm,
+    .col-sm-auto,
+    .col-sm-12,
+    .col-sm-11,
+    .col-sm-10,
+    .col-sm-9,
+    .col-sm-8,
+    .col-sm-7,
+    .col-sm-6,
+    .col-sm-5,
+    .col-sm-4,
+    .col-sm-3,
+    .col-sm-2,
+    .col-sm-1,
+    .col,
+    .col-auto,
+    .col-12,
+    .col-11,
+    .col-10,
+    .col-9,
+    .col-8,
+    .col-7,
+    .col-6,
+    .col-5,
+    .col-4,
+    .col-3,
+    .col-2,
+    .col-1 {
+      padding: 5px;
+    }
+    .footerIcon {
+      cursor: pointer;
+    }
+
+    .footerIcon:hover {
+      color: var(--color-lightY) !important;
+    }
+    .con {
+      font-size: 16px;
     }
   }
 }

@@ -51,7 +51,7 @@
                     <router-link :to="`/user/${user._id}/userchats/`">
                       <v-icon color="var(--color-white)" class="me-xl-1 favIcon">mdi-message-outline</v-icon>
                     </router-link>
-                    <v-icon color="var(--color-white)" class="favIcon" @click="wantDo(index)">mdi-file-move-outline</v-icon>
+                    <v-icon color="var(--color-white)" class="favIcon ms-xl-5" @click="wantDo(index)">mdi-file-move-outline</v-icon>
                     <v-icon color="var(--color-white)" class="favIconD ms-xl-5" @click="deletefav(index)">mdi-delete</v-icon>
                   </td>
                 </tr>

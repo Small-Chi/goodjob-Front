@@ -49,7 +49,7 @@
                   </td> -->
                   <td class="text-center">
                     <router-link :to="`/owner/${owner._id}/ownerchats/`">
-                      <v-icon color="var(--color-white)" class="me-xl-2 favIcon">mdi-message-outline</v-icon>
+                      <v-icon color="var(--color-white)" class="me-xl-5 favIcon">mdi-message-outline</v-icon>
                     </router-link>
                     <v-icon color="var(--color-white)" class="favIconD" @click="deletefav(index)">mdi-delete</v-icon>
                   </td>
