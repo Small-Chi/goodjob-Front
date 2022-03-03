@@ -572,9 +572,9 @@
                     </div>
                   </div>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt consectetur iste magni cupiditate nam deserunt suscipit totam aliquid
-                    ullam blanditiis? totam blanditiis assumenda incidunt tempore quis, reiciendis quaerat unde dicta esse minima facilis doloremque id optio
-                    deserunt quas nihil repellendus. Temporibus accusamus architecto sunt voluptate doloribus ad quos.
+                    Lorem psum dolor sit amet consectetur adipisicing elit. Incidunt consectetur iste magni cupiditate nam deserunt suscipit totam aliquid ullam
+                    blanditiis? totam blanditiis assumenda incidunt tempore quis, reiciendis quaerat unde dicta esse minima facilis doloremque id optio deserunt
+                    quas nihil repellendus. Temporibus accusamus architecto sunt voluptate doloribus ad quos.
                   </p>
                 </div>
                 <div class="avaImg4 d-none d-md-flex"></div>
