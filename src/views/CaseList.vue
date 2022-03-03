@@ -3,8 +3,8 @@
     <v-card class="overflow-hidden">
       <v-app-bar absolute hide-on-scroll prominent scroll-target="#scrolling-techniques-4" max-height="70" class="textWhite NAVbar" style="z-index: 5">
         <v-img class="logo1 me-xl-n2 ms-xl-8 d-none d-lg-flex" max-width="115" src="../assets/images/logo.png"></v-img>
-        <div class="Usersolgon rounded-pill ms-xl-n5 ms-md-n14">
-          <div class="ctext1 me-xl-7 d-flex justify-center justify-lg-end align-center" style="height: 100%">找專業</div>
+        <div class="Ownersolgon rounded-pill ms-xl-n5 ms-md-n14">
+          <div class="ctext1 me-xl-7 d-flex justify-center justify-lg-end align-center" style="height: 100%">找案子</div>
         </div>
         <v-spacer></v-spacer>
         <!-- 導覽連結 -->
