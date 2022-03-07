@@ -13,11 +13,16 @@
         </div>
       </div>
       <div class="col-sm-6 col-lg-4" v-if="me">
-        <div class="cardLine">
-          <!-- 新增卡片按鈕 -->
-          <v-btn depressed icon class="addcard" height="100" width="100">
-            <v-icon size="50" class="addpuls" @click="dialog = true">mdi-plus</v-icon>
-          </v-btn>
+        <div>
+          <!-- 卡片呈現 -->
+          <v-card class="mx-auto cardLine" max-width="350" color="var(--color-deepblue)">
+            <div class="cardLine">
+              <!-- 新增卡片按鈕 -->
+              <v-btn depressed icon class="addcard" height="100" width="100">
+                <v-icon size="50" class="addpuls" @click="dialog = true">mdi-plus</v-icon>
+              </v-btn>
+            </div>
+          </v-card>
         </div>
       </div>
       <!-- 要長出卡片的迴圈 -->

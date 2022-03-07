@@ -622,7 +622,9 @@
                   <p>Sun: 8.00am – 6.00pm</p>
                 </div>
               </div>
-              <div class="col-12 text-center pt-4 footerT" style="border-top: 1px solid var(--color-white)">Delish&copy;2021. All rights reserved.</div>
+              <div class="col-12 text-center pt-4 footerT" style="border-top: 1px solid var(--color-white)">
+                ※ 本網站僅供專題報告用途，其他商業用途需另外獲得批准、權利與許可。圖片來源多數取自 https://www.pinterest.com/，會員及公司名稱純屬虛構。
+              </div>
             </div>
           </div>
         </v-container>
