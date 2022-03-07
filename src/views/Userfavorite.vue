@@ -15,7 +15,7 @@
                   <th class="text-center">結案日期</th>
                   <th class="text-center">預算</th>
                   <th class="text-center">需求風格</th>
-                  <th class="text-center">訊息 | 狀態 | 移除</th>
+                  <th class="text-center">訊息 | 投稿 | 移除</th>
                 </tr>
               </thead>
               <tbody>
