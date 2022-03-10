@@ -13,6 +13,11 @@ import 'vue-img-inputer/dist/index.css'
 import mixin from './mixin.js'
 import 'swiper/css/swiper.css'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
+import VueGtag from 'vue-gtag'
+
+Vue.use(VueGtag, {
+  config: { id: 'G-TLCT1MRDV7' }
+})
 
 Vue.use(VueAwesomeSwiper)
 Vue.component('ImgInputer', ImgInputer)
